@@ -1,0 +1,157 @@
+/* ==========================================================================
+   Portfolio Single - Small Gallery layout style - begin
+   ========================================================================== */
+
+.eltdf-portfolio-single-holder {
+    
+    &.eltdf-ps-small-gallery-layout {
+
+        .eltdf-portfolio-single-likes {
+            display: inline-block;
+            padding-top: 22px;;
+            a {
+                padding-right: 17px;
+                i {
+                    font-size: 13px;
+                    padding-right: 10px;
+                }
+
+                span {
+                    font-size: 13px;
+                    line-height: inherit;
+                    color: $default-heading-color;
+                    text-transform: uppercase;
+                    letter-spacing: 2.5px;
+                    font-weight: 600;
+
+                    &:nth-child(3) {
+                        padding-left: 5px;
+
+                        &:after {
+                            content: "";
+                            border-right: 1px solid #d3d3d3;
+                            padding-left: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .eltdf-ps-image-holder {
+            width: 100%;
+            padding-right: 13%;
+            box-sizing: border-box;
+        
+            .eltdf-ps-image {
+                float: left;
+            
+                a {
+	                
+                    &:before {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin: -19px 0 0 -19px;
+                        content: '\4c';
+                        font-family: 'ElegantIcons';
+                        speak: none;
+                        color: #fff;
+                        font-size: 38px;
+                        line-height: 1;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-variant: normal;
+                        -webkit-font-smoothing: antialiased;
+                        z-index: 2;
+                        opacity: 0;
+                        @include eltdfTransition(opacity .2s ease-in-out);
+                    }
+                
+                    &:after {
+                        @include eltdfAbsoluteHolderLayout();
+                        content: '';
+                        background-color: rgba($first-main-color, 0.7);
+                        opacity: 0;
+                        @include eltdfTransition(opacity .2s ease-in-out);
+                    }
+                
+                    &:hover {
+                    
+                        &:before,
+                        &:after {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .eltdf-ps-content-item {
+            margin: 0 0 30px;
+
+            h2 {
+                margin-top: -10px;
+                margin-bottom: 8px;
+            }
+        }
+
+        .eltdf-ps-info-item {
+
+            &.eltdf-ps-date {
+
+                h5,
+                p {
+                    display: inline-block;
+                }
+            }
+
+
+            &.eltdf-ps-custom-field {
+
+                h5,
+                p {
+                    display: inline-block;
+                }
+            }
+
+            &.eltdf-ps-social-share {
+                display: inline;
+
+            }
+        }
+
+    }
+}
+
+@include laptop-landscape-medium {
+
+    .eltdf-portfolio-single-holder {
+
+        &.eltdf-ps-small-gallery-layout {
+
+            .eltdf-ps-image-holder {
+                padding-right: 7%;
+            }
+
+        }
+    }
+}
+
+
+@include ipad-landscape {
+
+    .eltdf-portfolio-single-holder {
+
+        &.eltdf-ps-small-gallery-layout {
+
+            .eltdf-ps-image-holder {
+                padding-right: 0;
+            }
+
+        }
+    }
+}
+
+/* ==========================================================================
+   Portfolio Single - Small Gallery layout style - end
+   ========================================================================== */

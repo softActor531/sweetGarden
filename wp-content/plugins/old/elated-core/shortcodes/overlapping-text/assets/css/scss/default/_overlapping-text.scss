@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Overlapping Text shortcode styles - begin
+   ========================================================================== */
+
+.eltdf-overlapping-text-holder {
+    @include eltdfRelativeHolderLayout();
+	  box-sizing: border-box;
+
+    .eltdf-ot-background-text-holder {
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      font-family: $alternative-text-font;
+      font-size: 253px;
+      color: rgba($first-main-color, 0.1);
+      font-weight: 400;
+      line-height: 1em;
+    }
+
+    .eltdf-ot-background-text-mark-holder {
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+      font-family: $alternative-text-font;
+      font-size: 155px;
+      color: rgba($first-main-color, 0.1);
+      font-weight: 400;
+      line-height: 1em;
+    }
+
+    .eltdf-ot-foreground-text-holder {
+      position: relative;
+      margin-top: -13.5%;
+
+      .eltdf-ot-foreground-text {
+        margin: 13px 0;
+      }
+    }
+
+    &.eltdf-overlapping-text-holder-left {
+      .eltdf-ot-foreground-text-holder {
+        margin-left: 8%;
+      }
+    }
+
+    &.eltdf-overlapping-text-holder-right {
+      .eltdf-ot-foreground-text-holder {
+        margin-right: 8%;
+      }
+    }
+}
+
+/* ==========================================================================
+   Overlapping Text shortcode styles - end
+   ========================================================================== */

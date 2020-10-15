@@ -1,0 +1,153 @@
+/* ==========================================================================
+   Portfolio Single - Slider layout style - begin
+   ========================================================================== */
+
+.eltdf-portfolio-single-holder {
+	
+	&.eltdf-ps-slider-layout {
+
+		.eltdf-ps-info-holder {
+			padding-top: 30px;
+			padding-bottom: 43px;
+		}
+
+		.eltdf-ps-title-holder {
+			h2 {
+				margin: 23px 0 31px;
+			}
+
+		}
+
+		.eltdf-ps-content-holder {
+			text-align: center;
+
+			.eltdf-ps-info-holder {
+
+				.eltdf-ps-info-item {
+					padding-left: 40px;
+
+					&.eltdf-ps-date {
+						display: inline;
+						margin-top: 6px;
+
+						h5,
+						p {
+							display: inline-block;
+						}
+
+						p {
+							padding-left: 3px;
+						}
+					}
+
+					&.eltdf-ps-custom-field {
+						display: inline;
+
+						h5,
+						p {
+							display: inline-block;
+						}
+
+						p {
+							padding-left: 3px;
+						}
+					}
+
+				}
+			}
+
+		}
+
+		.eltdf-ps-content-item {
+
+			p {
+				width: 66%;
+				margin: 0 auto;
+			}
+
+			@include ipad-landscape {
+				p {
+					width: 100%;
+				}
+			}
+		}
+
+		.eltdf-ps-social-info-holder {
+			padding-bottom: 17px;
+			.eltdf-portfolio-single-likes {
+                float: left;
+                display: inline-block;
+                padding-left: 3px;
+                a {
+                    padding-right: 17px;
+                    i {
+                        font-size: 13px;
+                        padding-right: 10px;
+                    }
+
+                   span {
+                    font-size: 13px;
+                    line-height: inherit;
+                    color: $default-heading-color;
+                    text-transform: uppercase;
+                    letter-spacing: 2.5px;
+                    font-weight: 600;
+                }
+                }
+            }
+
+			.eltdf-ps-social-share {
+				float: right;
+				display: inline;
+
+			}
+		}
+		
+		.eltdf-ps-image-holder {
+			margin: 0 0 27px;
+			
+			.eltdf-ps-image-inner {
+				visibility: hidden;
+			}
+			
+			.eltdf-ps-image {
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+		.owl-nav {
+
+			.eltdf-prev-icon,
+			.eltdf-next-icon {
+
+				@include eltdfTransition(opacity .2s ease-in-out);
+
+				.eltdf-icon-linear-icon {
+					position: relative;
+					display: inline-block;
+					vertical-align: middle;
+					font-size: 30px;
+					line-height: inherit;
+					color: #000;
+
+					&:before {
+						display: block;
+						line-height: inherit;
+					}
+				}
+
+				&:hover {
+					opacity:0.8;
+				}
+			}
+		}
+
+	}
+}
+
+/* ==========================================================================
+   Portfolio Single - Slider layout style - end
+   ========================================================================== */

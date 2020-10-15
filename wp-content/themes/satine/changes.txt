@@ -1,0 +1,11 @@
+1.1
+- Added WooCommerce 3.2.6 compatibility
+- Added Envato Market plugin as required
+- Added recommended plugins (WooCommerce and Contact Form 7)
+- Updated Visual Composer to 5.4.5
+- Updated Revolution Slider to 5.4.6.4
+- Updated Elated Core to 1.0.1
+- Fixed Switched Featured Image on thumbnail click option
+- Fixed potential security issue when saving theme options
+- Improved menu import functionality
+- Improved Product List add to cart button interactivity

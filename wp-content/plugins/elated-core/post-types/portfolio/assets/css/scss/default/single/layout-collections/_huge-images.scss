@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Portfolio Single - Huge Images layout style - begin
+   ========================================================================== */
+
+.eltdf-portfolio-single-holder {
+    
+    &.eltdf-ps-huge-images-layout {
+        padding: 0 4%;
+	    box-sizing: border-box;
+
+        .eltdf-ps-info-holder {
+            padding-left: 18px;
+        }
+
+        .eltdf-portfolio-single-likes {
+            display: inline-block;
+            padding-top: 22px;
+            a {
+                padding-right: 17px;
+                i {
+                    font-size: 13px;
+                    padding-right: 10px;
+                }
+
+                span {
+                    font-size: 13px;
+                    line-height: inherit;
+                    color: $default-heading-color;
+                    text-transform: uppercase;
+                    letter-spacing: 2.5px;
+                    font-weight: 600;
+
+                    &:nth-child(3) {
+                        padding-left: 5px;
+
+                        &:after {
+                            content: "";
+                            border-right: 1px solid #d3d3d3;
+                            padding-left: 26px;
+                        }
+                    }
+                }
+            }
+        }
+	    
+        .eltdf-ps-image-holder {
+        
+            .eltdf-ps-image {
+                margin: 0 0 30px;
+            
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        .eltdf-ps-content-item {
+            margin: 0 0 30px;
+
+            h2 {
+                margin-top: -10px;
+                margin-bottom: 8px;
+            }
+        }
+
+        .eltdf-ps-info-item {
+
+            &.eltdf-ps-date {
+
+                h5,
+                p {
+                    display: inline-block;
+                }
+            }
+
+
+            &.eltdf-ps-custom-field {
+
+                h5,
+                p {
+                    display: inline-block;
+                }
+            }
+
+            &.eltdf-ps-social-share {
+                display: inline;
+            }
+        }
+	    
+	    @include laptop-landscape {
+		    padding: 0 40px;
+	    }
+	
+	    @include ipad-portrait {
+		    padding: 0 30px;
+	    }
+    }
+}
+/* ==========================================================================
+   Portfolio Single - Huge Images layout style - end
+   ========================================================================== */

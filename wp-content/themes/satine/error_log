@@ -1,0 +1,13 @@
+[01-Feb-2019 13:28:15 America/Denver] PHP Fatal error:  Call to undefined function satine_elated_get_archive_blog_list_layout() in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/index.php on line 2
+[01-Feb-2019 14:34:39 America/Denver] PHP Fatal error:  Call to undefined function satine_elated_get_archive_blog_list_layout() in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/index.php on line 2
+[03-May-2019 19:52:46 UTC] PHP Fatal error:  Call to undefined function satine_elated_get_archive_blog_list_layout() in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/index.php on line 2
+[10-May-2019 07:09:16 UTC] PHP Fatal error:  Call to undefined function satine_elated_get_archive_blog_list_layout() in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/index.php on line 2
+[14-May-2019 05:06:01 UTC] PHP Fatal error:  Call to undefined function satine_elated_get_archive_blog_list_layout() in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/index.php on line 2
+[14-May-2019 18:34:50 UTC] PHP Fatal error:  Call to undefined function satine_elated_get_archive_blog_list_layout() in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/index.php on line 2
+[15-May-2019 18:40:44 UTC] PHP Fatal error:  Call to undefined function satine_elated_get_archive_blog_list_layout() in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/index.php on line 2
+[15-May-2019 21:33:38 UTC] PHP Fatal error:  Call to undefined function satine_elated_get_archive_blog_list_layout() in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/index.php on line 2
+[18-Nov-2019 15:59:32 UTC] PHP Fatal error:  Call to undefined function language_attributes() in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/404.php on line 2
+[14-Dec-2019 10:34:47 UTC] PHP Fatal error:  Call to undefined function language_attributes() in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/404.php on line 2
+[16-Dec-2019 12:36:39 UTC] PHP Fatal error:  Call to undefined function language_attributes() in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/404.php on line 2
+[14-Jan-2020 04:08:27 UTC] PHP Fatal error:  Call to undefined function language_attributes() in /home4/learnonc/public_html/sweetgarden/wp-content/themes/satine/404.php on line 2
+[16-Jan-2020 04:46:48 UTC] PHP Fatal error:  Call to undefined function language_attributes() in /home4/learnonc/public_html/sweetgarden/wp-content/themes/satine/404.php on line 2

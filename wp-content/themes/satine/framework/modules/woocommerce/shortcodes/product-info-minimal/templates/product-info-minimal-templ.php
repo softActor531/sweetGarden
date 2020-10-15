@@ -1,0 +1,1 @@
+<div class="eltdf-product-info-minimal"></div>

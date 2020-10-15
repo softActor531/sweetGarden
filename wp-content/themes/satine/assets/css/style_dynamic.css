@@ -1,0 +1,69 @@
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/assets/custom-styles/general-custom-styles.php satine_elated_design_styles function */
+.eltdf-boxed .eltdf-wrapper { background-attachment: fixed;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/assets/custom-styles/general-custom-styles.php satine_elated_content_styles function */
+.eltdf-content .eltdf-content-inner > .eltdf-full-width > .eltdf-full-width-inner { padding-top: 0px;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/assets/custom-styles/general-custom-styles.php satine_elated_content_styles function */
+.eltdf-content .eltdf-content-inner > .eltdf-container > .eltdf-container-inner { padding-top: 40px;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/contactform7/custom-styles/contact-form.php satine_elated_contact_form7_text_styles_1 function */
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-text, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-number, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-date, .cf7_custom_style_1 textarea.wpcf7-form-control.wpcf7-textarea, .cf7_custom_style_1 select.wpcf7-form-control.wpcf7-select, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-quiz { color: #000000;background-color: rgba(255, 255, 255, 0);border-width: 1px;padding-top: 20px;padding-right: 18px;padding-bottom: 19px;padding-left: 18px;margin-top: 0px;margin-bottom: 0px;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/contactform7/custom-styles/contact-form.php satine_elated_contact_form7_focus_styles_1 function */
+.cf7_custom_style_1 input:focus::-webkit-input-placeholder, .cf7_custom_style_1 textarea:focus::-webkit-input-placeholder { color: #000000;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/contactform7/custom-styles/contact-form.php satine_elated_contact_form7_focus_styles_1 function */
+.cf7_custom_style_1 input:focus:-moz-placeholder, .cf7_custom_style_1 textarea:focus:-moz-placeholder { color: #000000;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/contactform7/custom-styles/contact-form.php satine_elated_contact_form7_focus_styles_1 function */
+.cf7_custom_style_1 input:focus::-moz-placeholder, .cf7_custom_style_1 textarea:focus::-moz-placeholder { color: #000000;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/contactform7/custom-styles/contact-form.php satine_elated_contact_form7_focus_styles_1 function */
+.cf7_custom_style_1 input:focus:-ms-input-placeholder, .cf7_custom_style_1 textarea:focus:-ms-input-placeholder { color: #000000;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/contactform7/custom-styles/contact-form.php satine_elated_contact_form7_focus_styles_1 function */
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-text:focus, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-number:focus, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-date:focus, .cf7_custom_style_1 textarea.wpcf7-form-control.wpcf7-textarea:focus, .cf7_custom_style_1 select.wpcf7-form-control.wpcf7-select:focus, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-quiz:focus { color: #000000;background-color: rgba(255, 255, 255, 0);}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/contactform7/custom-styles/contact-form.php satine_elated_contact_form7_label_styles_1 function */
+.cf7_custom_style_1 p { color: #000000;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/contactform7/custom-styles/contact-form.php satine_elated_contact_form7_button_styles_1 function */
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit { font-size: 13px;text-transform: uppercase;border-width: 1px;padding-left: 22px;padding-right: 22px;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/contactform7/custom-styles/contact-form.php satine_elated_contact_form7_text_styles_2 function */
+.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-text, .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-number, .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-date, .cf7_custom_style_2 textarea.wpcf7-form-control.wpcf7-textarea, .cf7_custom_style_2 select.wpcf7-form-control.wpcf7-select, .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-quiz { color: #000000;background-color: rgba(255, 255, 255, 0);border-width: 1px;padding-top: 21px;padding-right: 18px;padding-bottom: 20px;padding-left: 18px;margin-top: 0px;margin-bottom: 0px;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/contactform7/custom-styles/contact-form.php satine_elated_contact_form7_focus_styles_2 function */
+.cf7_custom_style_2 input:focus::-webkit-input-placeholder, .cf7_custom_style_2 textarea:focus::-webkit-input-placeholder { color: #000000;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/contactform7/custom-styles/contact-form.php satine_elated_contact_form7_focus_styles_2 function */
+.cf7_custom_style_2 input:focus:-moz-placeholder, .cf7_custom_style_2 textarea:focus:-moz-placeholder { color: #000000;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/contactform7/custom-styles/contact-form.php satine_elated_contact_form7_focus_styles_2 function */
+.cf7_custom_style_2 input:focus::-moz-placeholder, .cf7_custom_style_2 textarea:focus::-moz-placeholder { color: #000000;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/contactform7/custom-styles/contact-form.php satine_elated_contact_form7_focus_styles_2 function */
+.cf7_custom_style_2 input:focus:-ms-input-placeholder, .cf7_custom_style_2 textarea:focus:-ms-input-placeholder { color: #000000;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/contactform7/custom-styles/contact-form.php satine_elated_contact_form7_focus_styles_2 function */
+.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-text:focus, .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-number:focus, .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-date:focus, .cf7_custom_style_2 textarea.wpcf7-form-control.wpcf7-textarea:focus, .cf7_custom_style_2 select.wpcf7-form-control.wpcf7-select:focus, .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-quiz:focus { color: #000000;background-color: rgba(0, 0, 0, 0);}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/contactform7/custom-styles/contact-form.php satine_elated_contact_form7_label_styles_2 function */
+.cf7_custom_style_2 p { color: #000000;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/error404/custom-styles/custom-styles.php satine_elated_404_header_general_styles function */
+.eltdf-404-page .eltdf-page-header { background-color: rgba(255, 255, 255, 0) !important;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/error404/custom-styles/custom-styles.php satine_elated_404_footer_top_general_styles function */
+.eltdf-404-page .eltdf-content { background-image: url(http://satine.elated-themes.com/wp-content/uploads/2017/08/error-page-background-img.jpg);background-position: center 0;background-size: cover;background-repeat: no-repeat;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/fullscreenmenu/custom-styles/fullscreen-menu.php satine_elated_fullscreen_menu_general_styles function */
+.eltdf-fullscreen-menu-holder { background-color: rgba(255,255,255,1);}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/header/custom-styles/header.php satine_elated_header_top_bar_styles function */
+.eltdf-top-bar-background { height: 100px;}
+
+/* generated in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/framework/modules/header/custom-styles/header.php satine_elated_fixed_header_styles function */
+.eltdf-page-header .eltdf-fixed-wrapper.fixed .eltdf-menu-area { background-color: rgba(255, 255, 255, 1)!important;}
+

@@ -1,0 +1,122 @@
+/* ==========================================================================
+   Elements Holder shortcode style - begin
+   ========================================================================== */
+
+.eltdf-elements-holder {
+	position:relative;
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+
+	&.eltdf-two-columns {
+
+		.eltdf-eh-item {
+			width: 50%;
+		}
+	}
+
+	&.eltdf-three-columns {
+
+		.eltdf-eh-item {
+			width: 33%;
+		}
+	}
+
+	&.eltdf-four-columns {
+
+		.eltdf-eh-item {
+			width: 25%;
+		}
+	}
+
+	&.eltdf-five-columns {
+
+		.eltdf-eh-item {
+			width: 20%;
+		}
+	}
+
+	&.eltdf-six-columns {
+
+		.eltdf-eh-item {
+			width: 16%;
+		}
+	}
+
+	.eltdf-eh-item {
+		position:relative;
+		display: table-cell;
+		vertical-align: middle;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+
+		&.eltdf-vertical-alignment-top {
+			vertical-align: top;
+		}
+
+		&.eltdf-vertical-alignment-bottom {
+			vertical-align: bottom;
+		}
+
+		&.eltdf-horizontal-alignment-center {
+			text-align: center;
+		}
+
+		&.eltdf-horizontal-alignment-right {
+			text-align: right;
+		}
+
+		.eltdf-elements-holder-item-inner {
+			width: 100%;
+		}
+
+		.eltdf-eh-item-background-holder {
+			@include eltdfAbsoluteHolderLayout();
+			overflow:hidden;
+
+			.eltdf-eh-item-background {
+				@include eltdfTransition(all .3s ease-in-out);
+				@include eltdfAbsoluteHolderLayout();
+				background-size:cover;
+			}
+		}
+
+		&.eltdf-hover-zoom {
+
+			&:hover {
+				.eltdf-eh-item-background { 
+					@include eltdfTransform(scale(1.05));
+				}
+			}
+		}
+	}
+
+	&.eltdf-ehi-float {
+
+		&.eltdf-three-columns {
+
+			.eltdf-eh-item {
+				width: 33.33333333333333%;
+			}
+		}
+
+		&.eltdf-six-columns {
+
+			.eltdf-eh-item {
+				width: 16.66666666666667%;
+			}
+		}
+
+		.eltdf-eh-item {
+			float:left;
+		}
+	}
+
+	.eltdf-ehi-content {
+		padding: 0 20px;
+	}
+}
+/* ==========================================================================
+   Elements Holder shortcode style - end
+   ========================================================================== */

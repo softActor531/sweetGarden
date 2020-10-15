@@ -1,0 +1,177 @@
+/* ==========================================================================
+   Progress Bar shortcode style - begin
+   ========================================================================== */
+
+.eltdf-progress-bar {
+    @include eltdfRelativeHolderLayout();
+
+
+    &.eltdf-progress-bar-dark {
+        .eltdf-pb-title-holder {
+            position: relative;
+            margin: 21px 0 11px;
+            letter-spacing: 2px;
+            line-height: 33px;
+            font-weight: 400;
+
+            .eltdf-pb-title {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                z-index: 100;
+                color: #000;
+
+            }
+        }
+
+
+        .eltdf-pb-percent {
+            position: absolute;
+            right: 0;
+            bottom: 1px;
+            width: auto;
+            display: inline-block;
+            vertical-align: middle;
+            opacity: 0;
+            z-index: 10;
+            letter-spacing: 2px;
+            line-height: 33px;
+            color: #000;
+            font-size: 17px;
+            font-weight: 400;
+
+            &:after {
+                content: '%';
+            }
+        }
+
+        .eltdf-pb-content-holder {
+            position: relative;
+            height: 6px;
+            overflow: hidden;
+            background-color: #b4b4b4;
+
+            .eltdf-pb-content {
+                height: 6px;
+                max-width: 100%;
+                overflow: hidden;
+                background-color: $first-main-color;
+            }
+        }
+    }
+
+    &.eltdf-progress-bar-light {
+        .eltdf-pb-title-holder {
+            position: relative;
+            margin: 16px 0 6px;
+            letter-spacing: 2px;
+            line-height: 33px;
+            font-weight: 400;
+
+            .eltdf-pb-title {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                z-index: 100;
+                color: #fff;
+
+            }
+        }
+
+
+        .eltdf-pb-percent {
+            position: absolute;
+            right: 0;
+            bottom: 1px;
+            width: auto;
+            display: inline-block;
+            vertical-align: middle;
+            opacity: 0;
+            z-index: 10;
+            letter-spacing: 2px;
+            line-height: 33px;
+            color: #fff;
+            font-size: 17px;
+            font-weight: 400;
+
+            &:after {
+                content: '%';
+            }
+        }
+
+        .eltdf-pb-content-holder {
+            position: relative;
+            height: 6px;
+            overflow: hidden;
+            background-color: #4d4d4d;
+
+            .eltdf-pb-content {
+                height: 6px;
+                max-width: 100%;
+                overflow: hidden;
+                background-color: #fff;
+            }
+        }
+
+
+    }
+
+    &.eltdf-progress-bar-default {
+        .eltdf-pb-title-holder {
+            position: relative;
+            margin: 16px 0 6px;
+            letter-spacing: 2px;
+            line-height: 33px;
+            font-weight: 400;
+
+            .eltdf-pb-title {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                z-index: 100;
+
+            }
+        }
+
+
+        .eltdf-pb-percent {
+            position: absolute;
+            right: 0;
+            bottom: 1px;
+            width: auto;
+            display: inline-block;
+            vertical-align: middle;
+            opacity: 0;
+            z-index: 10;
+            letter-spacing: 2px;
+            line-height: 33px;
+            font-size: 17px;
+            font-weight: 400;
+
+            &:after {
+                content: '%';
+            }
+        }
+
+        .eltdf-pb-content-holder {
+            position: relative;
+            height: 6px;
+            overflow: hidden;
+            background-color: #f7f7f7;
+
+            .eltdf-pb-content {
+                height: 6px;
+                max-width: 100%;
+                overflow: hidden;
+                background-color: $first-main-color;
+            }
+        }
+
+
+    }
+
+
+}
+/* ==========================================================================
+   Progress Bar shortcode style - end
+   ========================================================================== */

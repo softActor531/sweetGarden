@@ -1,0 +1,2 @@
+[01-Feb-2019 14:34:20 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/assets/custom-styles/general-custom-styles.php on line 617
+[01-Feb-2019 14:34:43 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/assets/custom-styles/general-custom-styles-responsive.php on line 23

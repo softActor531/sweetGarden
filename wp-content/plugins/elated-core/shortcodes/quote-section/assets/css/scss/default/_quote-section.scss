@@ -1,0 +1,40 @@
+/* ==========================================================================
+   Quote Section shortcode styles - begin
+   ========================================================================== */
+
+.eltdf-quote-section-holder {
+    @include eltdfRelativeHolderLayout();
+	  box-sizing: border-box;
+    text-align: center;
+
+    .eltdf-qs-quote-additional-text {
+      font-family: $alternative-text-font;
+      font-size: 18px;
+      font-style: italic;
+      margin: 19px 0 17px;
+    }
+
+    .eltdf-qs-quote-text {
+      margin: 13px 0;
+    }
+
+    .eltdf-quote-section-line {
+      display: inline-block;
+      position: relative;
+      height: 45px;
+      width: 1px;
+      background: $first-main-color;
+
+      &.eltdf-quote-section-line-before-text {
+        margin-bottom: 15px;
+      }
+
+      &.eltdf-quote-section-line-after-text {
+        margin-top: 15px;
+      }
+    }
+}
+
+/* ==========================================================================
+   Quote Section shortcode styles - end
+   ========================================================================== */

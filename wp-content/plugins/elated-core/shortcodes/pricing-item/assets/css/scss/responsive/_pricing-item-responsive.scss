@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Pricing Item shortcode responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-large {
+  .eltdf-price-item {
+       .eltdf-pi-inner {
+          .eltdf-pi-content-holder {
+             margin-top: 25px;
+             width: 67%;
+           }
+
+           .eltdf-pi-prices {
+              width: 33%;
+              .eltdf-pi-currency {
+                top: 4px;
+              }
+
+              .eltdf-pi-price {
+                padding-left: 27px;
+              }
+           }
+       }
+  }  
+}
+
+@include laptop-landscape {
+
+  .eltdf-price-item {
+
+    .eltdf-pi-inner {
+
+      .eltdf-pi-prices {
+        width: 45%;
+        text-align: right;
+
+      }
+
+      .eltdf-pi-content-holder {
+        width: 55%;
+      }
+
+    }
+  }
+}
+
+@include ipad-landscape {
+
+  .eltdf-price-item {
+
+    .eltdf-pi-inner {
+
+      .eltdf-pi-prices {
+        width: 45%;
+        text-align: center;
+        padding-right: 15px;
+
+        .eltdf-pi-currency {
+          top: -22px;
+        }
+      }
+
+      .eltdf-pi-content-holder {
+        width: 55%;
+        margin-top: 0;
+      }
+
+    }
+  }
+}
+
+@include phone-portrait {
+
+   .eltdf-price-item {
+
+     .eltdf-pi-inner {
+
+       .eltdf-pi-prices {
+         width: 100%;
+         text-align: left;
+
+       }
+
+       .eltdf-pi-content-holder {
+         width: 100%;
+         margin-top: 90px;
+       }
+
+     }
+   }
+
+ }
+
+/* ==========================================================================
+   Pricing Item shortcode responsive style - end
+   ========================================================================== */

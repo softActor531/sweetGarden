@@ -1,0 +1,29 @@
+/*
+Theme Name: Satine
+Theme URI: http://satine.elated-themes.com
+
+
+Description: An Elegant Multi-Concept Shop Theme
+Author: Elated Themes
+Author URI: http://themeforest.net/user/elated-themes
+Text Domain: satine
+Tags: one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-menu, featured-images, flexible-header, post-formats, sticky-post, threaded-comments, translation-ready
+Version: 1.1
+License: GNU General Public License
+License URI: licence/GPL.txt
+
+CSS changes can be made in files in the /css/ folder. This is a placeholder file required by WordPress, so do not delete it.
+
+*/
+
+.eltdf-main-menu > ul > li > a {
+    color: #000;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0px !important;
+}
+
+.eltdf-container-inner {
+    width: 1100px;
+    margin-top: 8px !important;
+}

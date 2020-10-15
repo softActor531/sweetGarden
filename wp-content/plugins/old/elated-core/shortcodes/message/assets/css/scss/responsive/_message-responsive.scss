@@ -1,0 +1,39 @@
+/* ==========================================================================
+# Message responsive style - begin
+========================================================================== */
+/* Unique style for both types  - begin
+========================================================================== */
+.eltdf-message{
+  @media only screen and (max-width: 480px){
+    padding: 20px 15px;
+    .eltdf-message-inner {
+      a.eltdf-close {
+        right: 7px;
+        top: 6px;
+      }
+    }
+  }
+  .eltdf-message-text{
+    @media screen and (max-width: 320px) {
+      line-height: normal;
+    }
+  }
+}
+/* Unique style for both types - end
+========================================================================== */
+
+/* Type with icon - begin
+========================================================================== */
+.eltdf-message.eltdf-with-icon{
+  .eltdf-message-icon-holder{
+    @media only screen and (max-width: 600px){
+      padding: 0 15px;
+    }
+  }
+}
+
+/* Type with icon - end
+========================================================================== 
+/* ==========================================================================
+# Message responsive style - end
+========================================================================== */

@@ -1,0 +1,150 @@
+/* ==========================================================================
+   Elements Holder shortcode responsive style - begin
+   ========================================================================== */
+
+.eltdf-elements-holder {
+
+	&.eltdf-responsive-mode-1280.eltdf-two-columns,
+	&.eltdf-responsive-mode-1280.eltdf-three-columns,
+	&.eltdf-responsive-mode-1280.eltdf-four-columns,
+	&.eltdf-responsive-mode-1280.eltdf-five-columns,
+	&.eltdf-responsive-mode-1280.eltdf-six-columns {
+
+		.eltdf-eh-item {
+			@media only screen and (max-width: 1280px) {
+				width: 100%;
+				display: inline-block;
+				height: auto;
+			}
+		}
+	}
+
+	&.eltdf-responsive-mode-1024.eltdf-two-columns,
+	&.eltdf-responsive-mode-1024.eltdf-three-columns,
+	&.eltdf-responsive-mode-1024.eltdf-four-columns,
+	&.eltdf-responsive-mode-1024.eltdf-five-columns,
+	&.eltdf-responsive-mode-1024.eltdf-six-columns {
+
+		.eltdf-eh-item {
+			@media only screen and (max-width: 1024px) {
+				width: 100%;
+				display: inline-block;
+				height: auto;
+			}
+		}
+	}
+
+	&.eltdf-responsive-mode-768.eltdf-two-columns,
+	&.eltdf-responsive-mode-768.eltdf-three-columns,
+	&.eltdf-responsive-mode-768.eltdf-four-columns,
+	&.eltdf-responsive-mode-768.eltdf-five-columns,
+	&.eltdf-responsive-mode-768.eltdf-six-columns {
+
+		.eltdf-eh-item {
+			@media only screen and (max-width: 768px) {
+				width: 100%;
+				display: inline-block;
+				height: auto;
+			}
+		}
+	}
+
+	&.eltdf-responsive-mode-600.eltdf-two-columns,
+	&.eltdf-responsive-mode-600.eltdf-three-columns,
+	&.eltdf-responsive-mode-600.eltdf-four-columns,
+	&.eltdf-responsive-mode-600.eltdf-five-columns,
+	&.eltdf-responsive-mode-600.eltdf-six-columns {
+
+		.eltdf-eh-item {
+			@media only screen and (max-width: 600px) {
+				width: 100%;
+				display: inline-block;
+				height: auto;
+			}
+		}
+	}
+
+	&.eltdf-responsive-mode-480.eltdf-two-columns,
+	&.eltdf-responsive-mode-480.eltdf-three-columns,
+	&.eltdf-responsive-mode-480.eltdf-four-columns,
+	&.eltdf-responsive-mode-480.eltdf-five-columns,
+	&.eltdf-responsive-mode-480.eltdf-six-columns {
+
+		.eltdf-eh-item {
+			@media only screen and (max-width: 480px) {
+				width: 100%;
+				display: inline-block;
+				height: auto;
+			}
+		}
+
+	}
+
+	.eltdf-eh-item-content{
+		@media only screen and (max-width: 480px) {
+			padding: 0 10px;
+		}
+	}
+
+}
+@media only screen and (max-width: 1280px) {
+	.eltdf-elements-holder.eltdf-responsive-mode-1280.eltdf-one-column-alignment-left .eltdf-eh-item .eltdf-eh-item-content {
+		text-align: left;
+	}
+	.eltdf-elements-holder.eltdf-responsive-mode-1280.eltdf-one-column-alignment-right .eltdf-eh-item .eltdf-eh-item-content {
+		text-align: right;
+	}
+	.eltdf-elements-holder.eltdf-responsive-mode-1280.eltdf-one-column-alignment-center .eltdf-eh-item .eltdf-eh-item-content {
+		text-align: center;
+	}
+}
+@include ipad-landscape {
+	.eltdf-elements-holder.eltdf-responsive-mode-1024.eltdf-one-column-alignment-left .eltdf-eh-item .eltdf-eh-item-content {
+		text-align: left;
+	}
+	.eltdf-elements-holder.eltdf-responsive-mode-1024.eltdf-one-column-alignment-right .eltdf-eh-item .eltdf-eh-item-content {
+		text-align: right;
+	}
+	.eltdf-elements-holder.eltdf-responsive-mode-1024.eltdf-one-column-alignment-center .eltdf-eh-item .eltdf-eh-item-content {
+		text-align: center;
+	}
+}
+
+@include ipad-portrait {
+	.eltdf-elements-holder.eltdf-responsive-mode-768.eltdf-one-column-alignment-left .eltdf-eh-item .eltdf-eh-item-content {
+		text-align: left;
+	}
+	.eltdf-elements-holder.eltdf-responsive-mode-768.eltdf-one-column-alignment-right .eltdf-eh-item .eltdf-eh-item-content {
+		text-align: right;
+	}
+	.eltdf-elements-holder.eltdf-responsive-mode-768.eltdf-one-column-alignment-center .eltdf-eh-item .eltdf-eh-item-content {
+		text-align: center;
+	}
+}
+
+@include phone-landscape {
+	.eltdf-elements-holder.eltdf-responsive-mode-600.eltdf-one-column-alignment-left .eltdf-eh-item .eltdf-eh-item-content {
+		text-align: left;
+	}
+	.eltdf-elements-holder.eltdf-responsive-mode-600.eltdf-one-column-alignment-right .eltdf-eh-item .eltdf-eh-item-content {
+		text-align: right;
+	}
+	.eltdf-elements-holder.eltdf-responsive-mode-600.eltdf-one-column-alignment-center .eltdf-eh-item .eltdf-eh-item-content {
+		text-align: center;
+	}
+}
+
+@include phone-portrait {
+	.eltdf-elements-holder.eltdf-responsive-mode-480.eltdf-one-column-alignment-left .eltdf-eh-item .eltdf-eh-item-content {
+		text-align: left;
+	}
+	.eltdf-elements-holder.eltdf-responsive-mode-480.eltdf-one-column-alignment-right .eltdf-eh-item .eltdf-eh-item-content {
+		text-align: right;
+	}
+	.eltdf-elements-holder.eltdf-responsive-mode-480.eltdf-one-column-alignment-center .eltdf-eh-item .eltdf-eh-item-content {
+		text-align: center;
+	}
+}
+/* ==========================================================================
+   Elements Holder shortcode responsive style - end
+   ========================================================================== */

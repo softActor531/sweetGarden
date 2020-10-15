@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Blockquote shortcode start styles
+   ========================================================================== */
+blockquote {
+  position: relative;
+  display: table;
+  padding: 46px 47px 44px;
+  background-color: #fafafa;
+
+
+  .eltdf-icon-quotations-holder {
+    display: table-cell;
+    width: 1%;
+    padding: 0 10px 0 15px;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color: $first-main-color;
+  }
+
+  .eltdf-blockquote-text {
+    display: block;
+    vertical-align: top;
+    margin-bottom: 1px;
+    line-height: 27px;
+  }
+
+  .eltdf-blockquote-author {
+    font-size: 11px;
+    color: $default-heading-color;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+}
+
+/* ==========================================================================
+   Blockquote shortcode end styles
+   ========================================================================== */

@@ -1,0 +1,194 @@
+/* ==========================================================================
+   Vertical Split Slider shortcode style - begin
+   ========================================================================== */
+
+.eltdf-vss-initialized {
+	
+	.eltdf-content {
+		
+		.eltdf-content-inner {
+			
+			> .eltdf-container {
+				
+				> .eltdf-container-inner {
+					padding: 0;
+				}
+			}
+			
+			> .eltdf-full-width {
+				
+				> .eltdf-full-width-inner {
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
+.eltdf-vertical-split-slider {
+	position: relative;
+	opacity: 0;
+	margin: 0 -2px;
+	overflow: hidden;
+	
+	.eltdf-vss-ms-left,
+	.eltdf-vss-ms-right {
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		box-sizing: border-box;
+	}
+
+	.eltdf-vss-ms-left {
+		top: 0;
+		left: 0;
+		padding-right: 15px;
+		
+		.eltdf-vss-ms-section {
+			background-position: 100% center;
+			background-size: cover;
+		}
+	}
+
+	.eltdf-vss-ms-right {
+		top: 10000px;
+		right: 0;
+		padding-left: 15px;
+		
+		.eltdf-vss-ms-section {
+			background-position: 0 center;
+			background-size: cover;
+		}
+	}
+	
+	.eltdf-vss-ms-section {
+		
+		&.ms-table{
+			@include eltdfTableLayout();
+			box-sizing: border-box;
+		}
+		
+		.ms-tableCell {
+			@include eltdfTableCellLayout();
+			box-sizing: border-box;
+		}
+		
+		.ms-easing {
+			@include eltdfTransition(all 0.7s ease-out);
+		}
+	}
+}
+
+.eltdf-vss-responsive {
+	display: none;
+	
+	.eltdf-vss-ms-section {
+		background-position: center;
+		background-size: cover;
+
+		&.ms-table{
+			@include eltdfTableLayout();
+			box-sizing: border-box;
+		}
+
+		.ms-tableCell {
+			@include eltdfTableCellLayout();
+			box-sizing: border-box;
+		}
+	}
+}
+
+.eltdf-vertical-split-slider-widget-area{
+	position: absolute;
+	bottom: 0px;
+	left: 20px;
+	@include eltdfTransform(rotate(-90deg));
+	-webkit-transform-origin: 0% 0%;
+	-moz-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+	z-index: 100;
+
+	.widget{
+		margin: 0 10px !important;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+#multiscroll-nav {
+	
+	@include eltdfTransform(translateX(-33px));
+	@include eltdfTransition(opacity .5s ease-out);
+    position: fixed;
+    z-index: 1000;
+    margin-top: -53px;
+    top: 50%;
+    opacity: 1;
+
+	&.right {
+        float: right;
+        right: 26px;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		counter-reset: section;
+
+		li {
+			position: relative;
+			display: block;
+			margin: 16px 0px;
+			line-height: 1;
+			text-align: right;
+
+			a {
+				position: relative;
+				display: inline-block;
+				width: 12px;
+				height: 12px;
+				border: 1px solid $default-heading-color;
+				border-radius: 50%;
+				-moz-border-radius: 50%;
+				-webkit-border-radius: 50%;
+				background-color: transparent;
+				z-index: 1;
+				box-sizing: border-box;
+				@include eltdfTransition(background-color 0.25s ease, width 0.25s ease);
+				
+				&.active,
+				&:hover{
+					background-color: $default-heading-color;
+
+					&:before{
+						color: $default-heading-color;
+					}
+				}
+				
+				.eltdf-light-header {
+					&.active,
+					&:hover{
+						background-color: $header-light-color;
+					}
+				}
+				
+				.eltdf-dark-header {
+					&.active,
+					&:hover{
+						background-color: $header-dark-color;
+					}
+				}
+				
+				span {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+
+
+/* ==========================================================================
+   Vertical Split Slider shortcode style - end
+   ========================================================================== */

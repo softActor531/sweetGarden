@@ -1,0 +1,3773 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   Shortcodes styles
+   ========================================================================== */
+/* ==========================================================================
+   Accordions shortcode style - begin
+   ========================================================================== */
+.eltdf-accordion-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-accordion-holder .eltdf-title-holder {
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  transform: translateZ(0px);
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.eltdf-accordion-holder .eltdf-title-holder .eltdf-tab-title {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+
+.eltdf-accordion-holder .eltdf-title-holder .eltdf-accordion-mark {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 20px;
+  height: 18px;
+  margin: -1px 0 0;
+  font-size: 24px;
+  line-height: 18px;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.eltdf-accordion-holder .eltdf-title-holder .eltdf-accordion-mark span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: inherit;
+  line-height: inherit;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.eltdf-accordion-holder .eltdf-title-holder .eltdf-accordion-mark span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-accordion-holder .eltdf-title-holder .eltdf-accordion-mark span.eltdf_icon_minus {
+  opacity: 0;
+}
+
+.eltdf-accordion-holder .eltdf-title-holder .eltdf-accordion-mark span.eltdf_icon_plus {
+  opacity: 1;
+}
+
+.eltdf-accordion-holder .eltdf-title-holder.ui-state-active .eltdf-tab-title, .eltdf-accordion-holder .eltdf-title-holder.ui-state-hover .eltdf-tab-title {
+  color: #fff;
+}
+
+.eltdf-accordion-holder .eltdf-title-holder.ui-state-active .eltdf-accordion-mark span.eltdf_icon_minus, .eltdf-accordion-holder .eltdf-title-holder.ui-state-hover .eltdf-accordion-mark span.eltdf_icon_minus {
+  opacity: 1;
+}
+
+.eltdf-accordion-holder .eltdf-title-holder.ui-state-active .eltdf-accordion-mark span.eltdf_icon_plus, .eltdf-accordion-holder .eltdf-title-holder.ui-state-hover .eltdf-accordion-mark span.eltdf_icon_plus {
+  opacity: 0;
+}
+
+.eltdf-accordion-holder span.eltdf-title-holder {
+  display: block;
+  color: #000;
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.eltdf-accordion-holder span.eltdf-title-holder .eltdf-accordion-mark {
+  margin: -2px 0 0;
+}
+
+.eltdf-accordion-holder .eltdf-accordion-content {
+  margin: 0;
+}
+
+.eltdf-accordion-holder.eltdf-ac-boxed.eltdf-white-skin .eltdf-title-holder.ui-state-default {
+  background-color: transparent;
+  color: #fff;
+}
+
+.eltdf-accordion-holder.eltdf-ac-boxed.eltdf-white-skin .eltdf-title-holder.ui-state-default.ui-state-hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.eltdf-accordion-holder.eltdf-ac-boxed.eltdf-white-skin .eltdf-title-holder.ui-state-active {
+  background-color: #fff;
+  color: #000;
+}
+
+.eltdf-accordion-holder.eltdf-ac-boxed .eltdf-title-holder {
+  margin: 15px 0 0;
+  padding: 11px 32px 8px 20px;
+  background-color: #fff;
+}
+
+.eltdf-accordion-holder.eltdf-ac-boxed .eltdf-title-holder:not(.ui-state-active) {
+  border: 1px solid #d3d3d3;
+}
+
+.eltdf-accordion-holder.eltdf-ac-boxed .eltdf-title-holder.ui-state-active {
+  border: 1px solid #000;
+}
+
+.eltdf-accordion-holder.eltdf-ac-boxed .eltdf-title-holder:first-child {
+  margin: 0;
+}
+
+.eltdf-accordion-holder.eltdf-ac-boxed .eltdf-title-holder .eltdf-accordion-mark {
+  right: 20px;
+}
+
+.eltdf-accordion-holder.eltdf-ac-boxed .eltdf-title-holder.ui-state-active, .eltdf-accordion-holder.eltdf-ac-boxed .eltdf-title-holder.ui-state-hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.eltdf-accordion-holder.eltdf-ac-boxed .eltdf-accordion-content {
+  padding: 24px 20px 9px;
+}
+
+.eltdf-accordion-holder.eltdf-ac-simple {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.eltdf-accordion-holder.eltdf-ac-simple .eltdf-title-holder {
+  padding: 11px 32px 8px 20px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.eltdf-accordion-holder.eltdf-ac-simple .eltdf-accordion-content {
+  border-top: 1px solid transparent;
+}
+
+.eltdf-accordion-holder.eltdf-ac-simple .eltdf-accordion-content.ui-accordion-content-active {
+  border-color: #e6e6e6;
+}
+
+.eltdf-accordion-holder.eltdf-ac-simple .eltdf-accordion-content {
+  padding: 21px 20px 16px;
+}
+
+/* ==========================================================================
+   Accordions shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+.eltdf-banner-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-banner-holder .eltdf-banner-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.eltdf-banner-holder .eltdf-banner-image img {
+  display: block;
+}
+
+.eltdf-banner-holder .eltdf-banner-text-holder {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.eltdf-banner-holder .eltdf-banner-text-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+
+.eltdf-banner-holder .eltdf-banner-subtitle {
+  margin: -7px 0 0;
+}
+
+.eltdf-banner-holder .eltdf-banner-title {
+  position: relative;
+  overflow: hidden;
+  margin: 26px 0 5px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.eltdf-banner-holder .eltdf-banner-text {
+  margin: 0;
+  line-height: 1em;
+}
+
+.eltdf-banner-holder .eltdf-banner-link {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.eltdf-banner-holder.eltdf-hover-zoom {
+  overflow: hidden;
+}
+
+.eltdf-banner-holder.eltdf-hover-zoom:hover .eltdf-banner-image {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blockquote shortcode start styles
+   ========================================================================== */
+blockquote {
+  position: relative;
+  display: table;
+  padding: 46px 47px 44px;
+  background-color: #fafafa;
+}
+
+blockquote .eltdf-icon-quotations-holder {
+  display: table-cell;
+  width: 1%;
+  padding: 0 10px 0 15px;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #000;
+}
+
+blockquote .eltdf-blockquote-text {
+  display: block;
+  vertical-align: top;
+  margin-bottom: 1px;
+  line-height: 27px;
+}
+
+blockquote .eltdf-blockquote-author {
+  font-size: 11px;
+  color: #000;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   Blockquote shortcode end styles
+   ========================================================================== */
+/* ==========================================================================
+   Button shortcode style - begin
+   ========================================================================== */
+.eltdf-btn {
+  font-family: inherit;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  outline: none;
+  line-height: 30px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  padding: 15px 33px 15px 36px;
+  font-size: 13px;
+}
+
+.eltdf-btn.eltdf-btn-simple {
+  padding: 0 !important;
+  color: #000;
+  background-color: transparent;
+  border: 0;
+  vertical-align: middle;
+}
+
+.eltdf-btn.eltdf-btn-simple .eltdf-btn-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.eltdf-btn.eltdf-btn-simple > i,
+.eltdf-btn.eltdf-btn-simple > span:not(.eltdf-btn-text) {
+  padding-left: 10px;
+  top: 0 !important;
+}
+
+.eltdf-btn.eltdf-btn-simple:hover > i,
+.eltdf-btn.eltdf-btn-simple:hover > span:not(.eltdf-btn-text) {
+  -webkit-transform: translateX(5px);
+  -moz-transform: translateX(5px);
+  transform: translateX(5px);
+}
+
+.eltdf-btn.eltdf-btn-solid {
+  color: #fff;
+  background-color: #000;
+  border: 2px solid transparent;
+}
+
+.eltdf-btn.eltdf-btn-solid:not(.eltdf-btn-custom-hover-color):hover {
+  color: #fff !important;
+}
+
+.eltdf-btn.eltdf-btn-solid:not(.eltdf-btn-custom-hover-bg):hover {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.eltdf-btn.eltdf-btn-solid:not(.eltdf-btn-custom-border-hover):hover {
+  border-color: transparent !important;
+}
+
+.eltdf-btn.eltdf-btn-with-arrow {
+  color: #fff;
+  background-color: #000;
+  border: 2px solid transparent;
+}
+
+.eltdf-btn.eltdf-btn-with-arrow > i,
+.eltdf-btn.eltdf-btn-with-arrow > span:not(.eltdf-btn-text) {
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.142857142857143em;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.eltdf-btn.eltdf-btn-with-arrow > i:before,
+.eltdf-btn.eltdf-btn-with-arrow > span:not(.eltdf-btn-text):before {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-btn.eltdf-btn-with-arrow:hover > i,
+.eltdf-btn.eltdf-btn-with-arrow:hover > span:not(.eltdf-btn-text) {
+  -webkit-transform: translateX(5px);
+  -moz-transform: translateX(5px);
+  transform: translateX(5px);
+}
+
+.eltdf-btn.eltdf-btn-outline {
+  color: #000;
+  background-color: transparent;
+  border: 1px solid #d3d3d3;
+}
+
+.eltdf-btn.eltdf-btn-outline:not(.eltdf-btn-custom-hover-color):hover {
+  color: #fff !important;
+}
+
+.eltdf-btn.eltdf-btn-outline:not(.eltdf-btn-custom-hover-bg):hover {
+  background-color: #cecece !important;
+}
+
+.eltdf-btn.eltdf-btn-outline:not(.eltdf-btn-custom-border-hover):hover {
+  border-color: #cecece !important;
+}
+
+.eltdf-btn.eltdf-btn-small {
+  font-size: 12px;
+  padding: 12px 23px 12px 26px;
+}
+
+.eltdf-btn.eltdf-btn-large {
+  font-size: 14px;
+  padding: 17px 43px;
+}
+
+.eltdf-btn.eltdf-btn-huge {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  padding: 17px 43px;
+}
+
+.eltdf-btn.eltdf-btn-icon > i,
+.eltdf-btn.eltdf-btn-icon > span:not(.eltdf-btn-text) {
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.142857142857143em;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.eltdf-btn.eltdf-btn-icon > i:before,
+.eltdf-btn.eltdf-btn-icon > span:not(.eltdf-btn-text):before {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-btn.eltdf-btn-icon:hover > i,
+.eltdf-btn.eltdf-btn-icon:hover > span:not(.eltdf-btn-text) {
+  -webkit-transform: translateX(5px);
+  -moz-transform: translateX(5px);
+  transform: translateX(5px);
+}
+
+input[type=submit].eltdf-btn,
+button.eltdf-btn {
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+/* ==========================================================================
+   Button shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Call To Action shortcode style - begin
+   ========================================================================== */
+.eltdf-call-to-action-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Layout Style - begin *****/
+  /***** Layout Style - end *****/
+  /***** Columns Space - begin *****/
+  /***** Columns Space - end *****/
+}
+
+.eltdf-call-to-action-holder .eltdf-cta-text-holder,
+.eltdf-call-to-action-holder .eltdf-cta-button-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.eltdf-call-to-action-holder .eltdf-cta-text-holder h1, .eltdf-call-to-action-holder .eltdf-cta-text-holder h2, .eltdf-call-to-action-holder .eltdf-cta-text-holder h3, .eltdf-call-to-action-holder .eltdf-cta-text-holder h4, .eltdf-call-to-action-holder .eltdf-cta-text-holder h5, .eltdf-call-to-action-holder .eltdf-cta-text-holder h6 {
+  margin: 0;
+}
+
+.eltdf-call-to-action-holder .eltdf-cta-button-holder .eltdf-btn {
+  white-space: nowrap;
+}
+
+.eltdf-call-to-action-holder.eltdf-normal-layout .eltdf-cta-inner {
+  display: table;
+}
+
+.eltdf-call-to-action-holder.eltdf-normal-layout:not(.eltdf-content-in-grid) .eltdf-cta-inner {
+  width: 100%;
+}
+
+.eltdf-call-to-action-holder.eltdf-normal-layout .eltdf-cta-text-holder,
+.eltdf-call-to-action-holder.eltdf-normal-layout .eltdf-cta-button-holder {
+  display: table-cell;
+  box-sizing: border-box;
+}
+
+.eltdf-call-to-action-holder.eltdf-normal-layout .eltdf-cta-button-holder {
+  text-align: right;
+}
+
+.eltdf-call-to-action-holder.eltdf-simple-layout .eltdf-cta-inner {
+  text-align: center;
+}
+
+.eltdf-call-to-action-holder.eltdf-simple-layout .eltdf-cta-text-holder,
+.eltdf-call-to-action-holder.eltdf-simple-layout .eltdf-cta-button-holder {
+  width: 100%;
+}
+
+.eltdf-call-to-action-holder.eltdf-simple-layout .eltdf-cta-button-holder {
+  margin: 28px 0 0;
+}
+
+.eltdf-call-to-action-holder.eltdf-minimal-layout .eltdf-cta-minimal-button-holder {
+  display: inline-block;
+  font-size: 18px;
+  font-family: Lora, serif;
+  font-style: italic;
+  text-decoration: underline;
+  vertical-align: middle;
+}
+
+.eltdf-call-to-action-holder.eltdf-two-halves-columns .eltdf-cta-text-holder,
+.eltdf-call-to-action-holder.eltdf-two-halves-columns .eltdf-cta-button-holder {
+  width: 50%;
+}
+
+.eltdf-call-to-action-holder.eltdf-two-thirds-columns .eltdf-cta-text-holder {
+  width: 66.66666666666667%;
+}
+
+.eltdf-call-to-action-holder.eltdf-two-thirds-columns .eltdf-cta-button-holder {
+  width: 33.33333333333333%;
+}
+
+.eltdf-call-to-action-holder.eltdf-three-quarters-columns .eltdf-cta-text-holder {
+  width: 75%;
+}
+
+.eltdf-call-to-action-holder.eltdf-three-quarters-columns .eltdf-cta-button-holder {
+  width: 25%;
+}
+
+.eltdf-call-to-action-holder.eltdf-four-fifths-columns .eltdf-cta-text-holder {
+  width: 80%;
+}
+
+.eltdf-call-to-action-holder.eltdf-four-fifths-columns .eltdf-cta-button-holder {
+  width: 20%;
+}
+
+/* ==========================================================================
+   Call To Action shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Clients Boxes shortcode style - begin
+   ========================================================================== */
+.eltdf-clients-boxes-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Hover Types - begin *****/
+  /***** Hover Types - end *****/
+}
+
+.eltdf-clients-boxes-holder.eltdf-cb-columns-three .eltdf-cb-item {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 769px) {
+  .eltdf-clients-boxes-holder.eltdf-cb-columns-three .eltdf-cb-item:nth-child(3n) .eltdf-cb-item-inner:before {
+    display: none;
+  }
+  .eltdf-clients-boxes-holder.eltdf-cb-columns-three .eltdf-cb-item:nth-last-child(-n+3) {
+    margin: 0;
+  }
+  .eltdf-clients-boxes-holder.eltdf-cb-columns-three .eltdf-cb-item:nth-last-child(-n+3) .eltdf-cb-item-inner {
+    margin: 0;
+  }
+  .eltdf-clients-boxes-holder.eltdf-cb-columns-three .eltdf-cb-item:nth-last-child(-n+3) .eltdf-cb-item-inner:after {
+    display: none;
+  }
+  .eltdf-clients-boxes-holder.eltdf-cb-columns-three .eltdf-cb-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.eltdf-clients-boxes-holder.eltdf-cb-columns-four .eltdf-cb-item {
+  width: 25%;
+}
+
+@media only screen and (min-width: 769px) {
+  .eltdf-clients-boxes-holder.eltdf-cb-columns-four .eltdf-cb-item:nth-child(4n) .eltdf-cb-item-inner:before {
+    display: none;
+  }
+  .eltdf-clients-boxes-holder.eltdf-cb-columns-four .eltdf-cb-item:nth-last-child(-n+4) {
+    margin: 0;
+  }
+  .eltdf-clients-boxes-holder.eltdf-cb-columns-four .eltdf-cb-item:nth-last-child(-n+4) .eltdf-cb-item-inner {
+    margin: 0;
+  }
+  .eltdf-clients-boxes-holder.eltdf-cb-columns-four .eltdf-cb-item:nth-last-child(-n+4) .eltdf-cb-item-inner:after {
+    display: none;
+  }
+  .eltdf-clients-boxes-holder.eltdf-cb-columns-four .eltdf-cb-item:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.eltdf-clients-boxes-holder .eltdf-cb-inner {
+  margin: 0 -33px;
+}
+
+.eltdf-clients-boxes-holder .eltdf-cb-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  padding: 0 33px;
+  margin: 0 0 34px;
+  box-sizing: border-box;
+}
+
+.touch .eltdf-clients-boxes-holder .eltdf-cb-item {
+  cursor: pointer;
+}
+
+.eltdf-clients-boxes-holder .eltdf-cb-item .eltdf-cb-item-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 33px;
+}
+
+.eltdf-clients-boxes-holder .eltdf-cb-item .eltdf-cb-item-inner:before, .eltdf-clients-boxes-holder .eltdf-cb-item .eltdf-cb-item-inner:after {
+  content: '';
+  position: absolute;
+  background-color: rgba(215, 215, 215, 0.4);
+}
+
+.eltdf-clients-boxes-holder .eltdf-cb-item .eltdf-cb-item-inner:before {
+  top: 0;
+  right: -34px;
+  width: 1px;
+  height: 100%;
+}
+
+.eltdf-clients-boxes-holder .eltdf-cb-item .eltdf-cb-item-inner:after {
+  bottom: -34px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.eltdf-clients-boxes-holder .eltdf-cb-item .eltdf-cb-link {
+  position: relative;
+  display: block;
+}
+
+.eltdf-clients-boxes-holder.eltdf-cb-hover-switch-images .eltdf-cb-item:hover .eltdf-cb-image {
+  opacity: 0;
+}
+
+.eltdf-clients-boxes-holder.eltdf-cb-hover-switch-images .eltdf-cb-item:hover .eltdf-cb-hover-image {
+  opacity: 1;
+}
+
+.eltdf-clients-boxes-holder.eltdf-cb-hover-switch-images .eltdf-cb-item .eltdf-cb-image {
+  position: relative;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: opacity 0.15s ease-out;
+  -moz-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+}
+
+.eltdf-clients-boxes-holder.eltdf-cb-hover-switch-images .eltdf-cb-item .eltdf-cb-hover-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  opacity: 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: opacity 0.15s ease-out;
+  -moz-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+}
+
+.eltdf-clients-boxes-holder.eltdf-cb-hover-roll-over .eltdf-cb-item:hover .eltdf-cb-image {
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.eltdf-clients-boxes-holder.eltdf-cb-hover-roll-over .eltdf-cb-item:hover .eltdf-cb-hover-image {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.eltdf-clients-boxes-holder.eltdf-cb-hover-roll-over .eltdf-cb-item .eltdf-cb-item-inner,
+.eltdf-clients-boxes-holder.eltdf-cb-hover-roll-over .eltdf-cb-item .eltdf-cb-link {
+  overflow: hidden;
+}
+
+.eltdf-clients-boxes-holder.eltdf-cb-hover-roll-over .eltdf-cb-item .eltdf-cb-image {
+  position: relative;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.eltdf-clients-boxes-holder.eltdf-cb-hover-roll-over .eltdf-cb-item .eltdf-cb-hover-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-transform: translate(-150%, -50%);
+  -moz-transform: translate(-150%, -50%);
+  transform: translate(-150%, -50%);
+}
+
+/* ==========================================================================
+   Clients Boxes shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Clients Carousel shortcode style - begin
+   ========================================================================== */
+.eltdf-clients-carousel-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Hover Types - begin *****/
+  /***** Hover Types - end *****/
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  visibility: hidden;
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  z-index: 1;
+  /* No Js */
+  /*
+         *  Owl Carousel - Animate Plugin
+         */
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner .owl-nav {
+  display: none;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner.owl-loaded {
+  display: block;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner.owl-hidden {
+  opacity: 0;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner.owl-refresh .owl-item {
+  visibility: hidden;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner.owl-drag .owl-item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner.owl-grab {
+  cursor: move;
+  cursor: grab;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner.owl-rtl {
+  direction: rtl;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner.owl-rtl .owl-item {
+  float: right;
+}
+
+.no-js .eltdf-clients-carousel-holder .eltdf-cc-inner {
+  display: block;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner .owl-wrapper,
+.eltdf-clients-carousel-holder .eltdf-cc-inner .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner .owl-item img .owl-lazy {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner .owl-item .owl-lazy {
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner .owl-nav.disabled {
+  display: none;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner .owl-nav .owl-prev,
+.eltdf-clients-carousel-holder .eltdf-cc-inner .owl-nav .owl-next {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner .owl-dots.disabled {
+  display: none;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner .owl-dots .owl-dot {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner .owl-animated-in {
+  z-index: 0;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner .owl-animated-out {
+  z-index: 1;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.touch .eltdf-clients-carousel-holder .eltdf-cc-item {
+  cursor: pointer;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-item .eltdf-cc-item {
+  position: relative;
+  display: block;
+}
+
+.eltdf-clients-carousel-holder.eltdf-cc-hover-switch-images .eltdf-cc-item:hover .eltdf-cc-image {
+  opacity: 0;
+}
+
+.eltdf-clients-carousel-holder.eltdf-cc-hover-switch-images .eltdf-cc-item:hover .eltdf-cc-hover-image {
+  opacity: 1;
+}
+
+.eltdf-clients-carousel-holder.eltdf-cc-hover-switch-images .eltdf-cc-item .eltdf-cc-image {
+  position: relative;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: opacity 0.15s ease-out;
+  -moz-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+}
+
+.eltdf-clients-carousel-holder.eltdf-cc-hover-switch-images .eltdf-cc-item .eltdf-cc-hover-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  opacity: 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: opacity 0.15s ease-out;
+  -moz-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+}
+
+.eltdf-clients-carousel-holder.eltdf-cc-hover-roll-over .eltdf-cc-item {
+  overflow: hidden;
+}
+
+.eltdf-clients-carousel-holder.eltdf-cc-hover-roll-over .eltdf-cc-item:hover .eltdf-cc-image {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.eltdf-clients-carousel-holder.eltdf-cc-hover-roll-over .eltdf-cc-item:hover .eltdf-cc-hover-image {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.eltdf-clients-carousel-holder.eltdf-cc-hover-roll-over .eltdf-cc-item .eltdf-cc-image {
+  position: relative;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.eltdf-clients-carousel-holder.eltdf-cc-hover-roll-over .eltdf-cc-item .eltdf-cc-hover-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
+
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ==========================================================================
+   Clients Carousel shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Countdown shortcode style - begin
+   ========================================================================== */
+.eltdf-countdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-countdown .countdown-rtl {
+  direction: rtl;
+}
+
+.eltdf-countdown .countdown-row {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  clear: both;
+}
+
+.eltdf-countdown .countdown-row.countdown-show1 .countdown-section {
+  width: 100%;
+}
+
+.eltdf-countdown .countdown-row.countdown-show2 .countdown-section {
+  width: 50%;
+}
+
+.eltdf-countdown .countdown-row.countdown-show3 .countdown-section {
+  width: 33.33333333333333%;
+}
+
+.eltdf-countdown .countdown-row.countdown-show4 .countdown-section {
+  width: 25%;
+}
+
+.eltdf-countdown .countdown-row.countdown-show5 .countdown-section {
+  width: 20%;
+}
+
+.eltdf-countdown .countdown-row .countdown-section {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0 5px;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+}
+
+.eltdf-countdown .countdown-row .countdown-section .countdown-amount {
+  position: relative;
+  display: block;
+  color: #000;
+  font-size: 30px;
+  line-height: 1.7em;
+  /* 1.33em */
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.eltdf-countdown .countdown-row .countdown-section .countdown-period {
+  display: block;
+  font-size: 17px;
+  line-height: 2.35em;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000;
+  padding-top: 6px;
+}
+
+.eltdf-countdown.eltdf-dark-skin .countdown-row .countdown-section .countdown-amount,
+.eltdf-countdown.eltdf-dark-skin .countdown-row .countdown-section .countdown-period {
+  color: #000;
+}
+
+.eltdf-countdown.eltdf-light-skin .countdown-row .countdown-section .countdown-amount,
+.eltdf-countdown.eltdf-light-skin .countdown-row .countdown-section .countdown-period {
+  color: #fff;
+}
+
+/* ==========================================================================
+   Countdown shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Counter shortcode style - begin
+   ========================================================================== */
+.eltdf-counter-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.eltdf-counter-holder.eltdf-counter-boxed {
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+}
+
+.eltdf-counter-holder.eltdf-counter-boxed .eltdf-counter-inner {
+  padding: 55px 0;
+}
+
+.eltdf-counter-holder .eltdf-counter-inner {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.eltdf-counter-holder .eltdf-counter {
+  height: 1em;
+  display: inline-block !important;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 36px;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  overflow: hidden;
+  font-family: "Lora", serif;
+}
+
+.eltdf-counter-holder .eltdf-counter-title {
+  margin: 22px 0 5px;
+  font-size: 15px;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  color: #fff;
+  font-family: "Lora", serif;
+}
+
+.eltdf-counter-holder .eltdf-counter-text {
+  margin: 14px 0 0;
+}
+
+/* ==========================================================================
+   Counter shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Dropcaps shortcode style - begin
+   ========================================================================== */
+.eltdf-dropcaps {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  line-height: 42px;
+  font-size: 42px;
+  color: #717171;
+  font-weight: 300;
+  text-align: center;
+  margin: 7px 10px 0 0;
+}
+
+.eltdf-dropcaps.eltdf-square, .eltdf-dropcaps.eltdf-circle {
+  height: 35px;
+  width: 35px;
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #000;
+  margin: 6px 9px 0 0;
+  box-sizing: border-box;
+}
+
+.eltdf-dropcaps.eltdf-circle {
+  border-radius: 3em;
+}
+
+/* ==========================================================================
+   Dropcaps shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Elements Holder shortcode style - begin
+   ========================================================================== */
+.eltdf-elements-holder {
+  position: relative;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.eltdf-elements-holder.eltdf-two-columns .eltdf-eh-item {
+  width: 50%;
+}
+
+.eltdf-elements-holder.eltdf-three-columns .eltdf-eh-item {
+  width: 33%;
+}
+
+.eltdf-elements-holder.eltdf-four-columns .eltdf-eh-item {
+  width: 25%;
+}
+
+.eltdf-elements-holder.eltdf-five-columns .eltdf-eh-item {
+  width: 20%;
+}
+
+.eltdf-elements-holder.eltdf-six-columns .eltdf-eh-item {
+  width: 16%;
+}
+
+.eltdf-elements-holder .eltdf-eh-item {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-vertical-alignment-top {
+  vertical-align: top;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-vertical-alignment-bottom {
+  vertical-align: bottom;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-horizontal-alignment-center {
+  text-align: center;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-horizontal-alignment-right {
+  text-align: right;
+}
+
+.eltdf-elements-holder .eltdf-eh-item .eltdf-elements-holder-item-inner {
+  width: 100%;
+}
+
+.eltdf-elements-holder .eltdf-eh-item .eltdf-eh-item-background-holder {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.eltdf-elements-holder .eltdf-eh-item .eltdf-eh-item-background-holder .eltdf-eh-item-background {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-hover-zoom:hover .eltdf-eh-item-background {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.eltdf-elements-holder.eltdf-ehi-float.eltdf-three-columns .eltdf-eh-item {
+  width: 33.33333333333333%;
+}
+
+.eltdf-elements-holder.eltdf-ehi-float.eltdf-six-columns .eltdf-eh-item {
+  width: 16.66666666666667%;
+}
+
+.eltdf-elements-holder.eltdf-ehi-float .eltdf-eh-item {
+  float: left;
+}
+
+.eltdf-elements-holder .eltdf-ehi-content {
+  padding: 0 20px;
+}
+
+/* ==========================================================================
+   Elements Holder shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Google Map shortcode style - begin
+   ========================================================================== */
+.eltdf-google-map-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-google-map {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+.eltdf-google-map iframe,
+.eltdf-google-map object,
+.eltdf-google-map embed {
+  width: 100%;
+  display: block;
+}
+
+.eltdf-google-map img {
+  max-width: none;
+}
+
+.eltdf-google-map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1000;
+}
+
+/* ==========================================================================
+   Google Map shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Icon List Item shortcode style - begin
+   ========================================================================== */
+.eltdf-icon-list-holder {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: auto;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.eltdf-icon-list-holder .eltdf-il-icon-holder,
+.eltdf-icon-list-holder .eltdf-il-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.eltdf-icon-list-holder .eltdf-il-icon-holder {
+  width: 1%;
+}
+
+.eltdf-icon-list-holder .eltdf-il-icon-holder > * {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+  font-size: 15px;
+  line-height: inherit;
+}
+
+.eltdf-icon-list-holder .eltdf-il-icon-holder > *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-icon-list-holder .eltdf-il-text {
+  width: 99%;
+  padding: 0 0 0 13px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Icon List Item shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Icon With Text shortcode style - begin
+   ========================================================================== */
+.eltdf-iwt {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-iwt .eltdf-iwt-icon a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.eltdf-iwt .eltdf-iwt-icon .eltdf-icon-shortcode {
+  line-height: 1;
+}
+
+.eltdf-iwt .eltdf-iwt-icon .eltdf-icon-shortcode.eltdf-circle, .eltdf-iwt .eltdf-iwt-icon .eltdf-icon-shortcode.eltdf-square, .eltdf-iwt .eltdf-iwt-icon .eltdf-icon-shortcode.eltdf-dropcaps.eltdf-circle {
+  line-height: 2;
+}
+
+.eltdf-iwt .eltdf-iwt-icon .eltdf-icon-shortcode .eltdf-icon-element {
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.eltdf-iwt .eltdf-iwt-icon .eltdf-icon-shortcode .eltdf-icon-element:hover {
+  color: #cecece;
+}
+
+.eltdf-iwt .eltdf-iwt-title {
+  margin: 5px 0;
+}
+
+.eltdf-iwt .eltdf-iwt-title a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.eltdf-iwt .eltdf-iwt-title-text {
+  display: block;
+}
+
+.eltdf-iwt .eltdf-iwt-text {
+  margin: 3px 0 0;
+}
+
+.eltdf-iwt.eltdf-iwt-icon-left {
+  width: auto;
+}
+
+.eltdf-iwt.eltdf-iwt-icon-left .eltdf-iwt-icon,
+.eltdf-iwt.eltdf-iwt-icon-left .eltdf-iwt-content {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.eltdf-iwt.eltdf-iwt-icon-left .eltdf-iwt-icon {
+  position: relative;
+  top: 10px;
+  right: 12px;
+}
+
+.eltdf-iwt.eltdf-iwt-icon-left .eltdf-iwt-icon .eltdf-icon-shortcode {
+  font-size: 2.5em;
+}
+
+.eltdf-iwt.eltdf-iwt-icon-left .eltdf-iwt-icon img {
+  max-width: none;
+}
+
+.eltdf-iwt.eltdf-iwt-icon-left .eltdf-iwt-content {
+  padding: 0 0 0 23px;
+}
+
+.eltdf-iwt.eltdf-iwt-icon-left-from-title .eltdf-iwt-icon,
+.eltdf-iwt.eltdf-iwt-icon-left-from-title .eltdf-iwt-title-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.eltdf-iwt.eltdf-iwt-icon-left-from-title .eltdf-iwt-icon .eltdf-icon-element {
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.eltdf-iwt.eltdf-iwt-icon-left-from-title .eltdf-iwt-icon img {
+  max-width: none;
+}
+
+.eltdf-iwt.eltdf-iwt-icon-left-from-title .eltdf-iwt-title-text {
+  padding: 0 0 0 17px;
+}
+
+.eltdf-iwt.eltdf-iwt-icon-top {
+  text-align: center;
+}
+
+.eltdf-iwt.eltdf-iwt-icon-top .eltdf-iwt-content {
+  padding: 19px 0 0;
+}
+
+/* ==========================================================================
+   Icon With Text shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Icon shortcode style - begin
+   ========================================================================== */
+.eltdf-icon-shortcode {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.eltdf-icon-shortcode.eltdf-circle, .eltdf-icon-shortcode.eltdf-square, .eltdf-icon-shortcode.eltdf-dropcaps.eltdf-circle {
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  background-color: #f7f7f7;
+  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.eltdf-icon-shortcode.eltdf-circle a, .eltdf-icon-shortcode.eltdf-square a, .eltdf-icon-shortcode.eltdf-dropcaps.eltdf-circle a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+
+.eltdf-icon-shortcode.eltdf-circle .eltdf-icon-element, .eltdf-icon-shortcode.eltdf-square .eltdf-icon-element, .eltdf-icon-shortcode.eltdf-dropcaps.eltdf-circle .eltdf-icon-element {
+  color: #000;
+  line-height: inherit;
+}
+
+.eltdf-icon-shortcode.eltdf-circle {
+  border-radius: 50%;
+}
+
+.eltdf-icon-shortcode .eltdf-icon-element {
+  display: block;
+  line-height: inherit;
+  color: #000;
+  -webkit-transition: color 0.15s ease-in-out;
+  -moz-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
+}
+
+.eltdf-icon-shortcode .eltdf-icon-element:before {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-icon-animation-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: transform 0.15s ease-in-out;
+  -moz-transition: transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out;
+}
+
+.eltdf-icon-animation-holder.eltdf-icon-animation-show {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+.eltdf-icon-tiny {
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align: -15%;
+}
+
+.eltdf-icon-small {
+  font-size: 2em;
+}
+
+.eltdf-icon-medium {
+  font-size: 2.8em;
+}
+
+.eltdf-icon-large {
+  font-size: 4em;
+}
+
+.eltdf-icon-huge {
+  font-size: 5em;
+}
+
+/* ==========================================================================
+   Icon shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Image Gallery shortcode style - begin
+   ========================================================================== */
+.eltdf-image-gallery {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid span.eltdf-image-gallery-hover {
+  position: absolute;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid .eltdf-ig-image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid .eltdf-ig-image:hover span.eltdf-image-gallery-hover {
+  opacity: 0.95;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+.eltdf-image-gallery .eltdf-ig-grid .eltdf-ig-image .eltdf-ig-image-inner {
+  position: relative;
+  display: inline-block;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid .eltdf-ig-image a, .eltdf-image-gallery .eltdf-ig-grid .eltdf-ig-image img {
+  display: block;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid .eltdf-ig-image a {
+  position: relative;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid .eltdf-ig-image a:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -19px 0 0 -19px;
+  content: '\4c';
+  font-family: 'ElegantIcons';
+  speak: none;
+  color: #fff;
+  font-size: 38px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  -webkit-font-smoothing: antialiased;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid .eltdf-ig-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid .eltdf-ig-image a:hover:before, .eltdf-image-gallery .eltdf-ig-grid .eltdf-ig-image a:hover:after {
+  opacity: 1;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-no-space {
+  margin: 0;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-no-space .eltdf-ig-image {
+  padding: 0 0px;
+  margin: 0 0 0px;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-tiny-space {
+  margin: 0 -5px;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-tiny-space .eltdf-ig-image {
+  padding: 0 5px;
+  margin: 0 0 10px;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-small-space {
+  margin: 0 -10px;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-small-space .eltdf-ig-image {
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-normal-space {
+  margin: 0 -15px;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-normal-space .eltdf-ig-image {
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-2 .eltdf-ig-image {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-2 .eltdf-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-3 .eltdf-ig-image {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-3 .eltdf-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-4 .eltdf-ig-image {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-4 .eltdf-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-5 .eltdf-ig-image {
+  width: 20%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-5 .eltdf-ig-image:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-6 .eltdf-ig-image {
+  width: 16.66667%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-6 .eltdf-ig-image:nth-child(6n+1) {
+    clear: both;
+  }
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-grayscale .eltdf-ig-image img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  filter: url(img/desaturate.svg#grayscale);
+}
+
+.touch .eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-grayscale .eltdf-ig-image {
+  cursor: pointer;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-grayscale .eltdf-ig-image:hover img {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.eltdf-image-gallery .eltdf-ig-slider {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.eltdf-image-gallery .eltdf-ig-slider .owl-item a {
+  position: relative;
+  display: block;
+}
+
+.eltdf-image-gallery .eltdf-ig-slider .owl-item a img {
+  display: block;
+}
+
+.eltdf-image-gallery .eltdf-ig-slider .owl-item a:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -19px 0 0 -19px;
+  content: '\4c';
+  font-family: 'ElegantIcons';
+  speak: none;
+  color: #fff;
+  font-size: 38px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  -webkit-font-smoothing: antialiased;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.eltdf-image-gallery .eltdf-ig-slider .owl-item a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.eltdf-image-gallery .eltdf-ig-slider .owl-item a:hover:before, .eltdf-image-gallery .eltdf-ig-slider .owl-item a:hover:after {
+  opacity: 1;
+}
+
+.eltdf-image-gallery .eltdf-ig-slider.eltdf-nav-pag-enabled .owl-nav .owl-prev,
+.eltdf-image-gallery .eltdf-ig-slider.eltdf-nav-pag-enabled .owl-nav .owl-next {
+  -webkit-transform: translateY(calc(-50% - 19px));
+  -moz-transform: translateY(calc(-50% - 19px));
+  transform: translateY(calc(-50% - 19px));
+}
+
+.eltdf-image-gallery .owl-nav .owl-prev,
+.eltdf-image-gallery .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.eltdf-image-gallery .owl-nav .owl-prev:hover .eltdf-prev-icon,
+.eltdf-image-gallery .owl-nav .owl-prev:hover .eltdf-next-icon,
+.eltdf-image-gallery .owl-nav .owl-next:hover .eltdf-prev-icon,
+.eltdf-image-gallery .owl-nav .owl-next:hover .eltdf-next-icon {
+  color: #000;
+}
+
+.eltdf-image-gallery .owl-nav .owl-prev {
+  left: 30px;
+}
+
+.eltdf-image-gallery .owl-nav .owl-next {
+  right: 30px;
+}
+
+.eltdf-image-gallery .owl-nav .eltdf-prev-icon,
+.eltdf-image-gallery .owl-nav .eltdf-next-icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+  line-height: 1;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.eltdf-image-gallery .owl-nav .eltdf-prev-icon .eltdf-icon-arrow,
+.eltdf-image-gallery .owl-nav .eltdf-next-icon .eltdf-icon-arrow {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 46px;
+  line-height: inherit;
+}
+
+.eltdf-image-gallery .owl-nav .eltdf-prev-icon .eltdf-icon-arrow:before,
+.eltdf-image-gallery .owl-nav .eltdf-next-icon .eltdf-icon-arrow:before {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-image-gallery .owl-dots {
+  text-align: center;
+  margin: 16px 0 0;
+}
+
+.eltdf-image-gallery .owl-dots .owl-dot {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.eltdf-image-gallery .owl-dots .owl-dot span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  border-radius: 3em;
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  -webkit-transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  box-sizing: border-box;
+}
+
+.eltdf-image-gallery .owl-dots .owl-dot:hover span, .eltdf-image-gallery .owl-dots .owl-dot.active span {
+  background-color: #000;
+  border-color: #000;
+}
+
+.eltdf-image-gallery .owl-carousel .owl-item img {
+  -webkit-transform: translateZ(0);
+}
+
+/* ==========================================================================
+   Image Gallery shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Image With Text shortcode style - begin
+   ========================================================================== */
+.eltdf-image-with-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-image-with-text-holder .eltdf-iwt-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-image-with-text-holder .eltdf-iwt-image a, .eltdf-image-with-text-holder .eltdf-iwt-image img {
+  display: block;
+}
+
+.eltdf-image-with-text-holder .eltdf-iwt-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-image-with-text-holder .eltdf-iwt-title {
+  margin: 27px 0 0;
+}
+
+.eltdf-image-with-text-holder .eltdf-iwt-text {
+  margin: 5px 0 0;
+}
+
+/* ==========================================================================
+   Image With Text shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+# Message style - begin
+========================================================================== */
+/* Unique style for both types  - begin
+========================================================================== */
+.eltdf-message {
+  position: relative;
+  padding: 12px 27px;
+  margin: 0;
+  background-color: #000;
+  border: 0 solid #000;
+}
+
+@media only screen and (max-width: 480px) {
+  .eltdf-message {
+    padding: 20px 22px;
+  }
+}
+
+.eltdf-message .eltdf-message-inner {
+  position: relative;
+  padding-right: 20px;
+}
+
+.eltdf-message .eltdf-message-inner .eltdf-message-text {
+  display: table;
+  height: 100%;
+}
+
+@media screen and (max-width: 320px) {
+  .eltdf-message .eltdf-message-inner .eltdf-message-text {
+    line-height: normal !important;
+  }
+}
+
+.eltdf-message .eltdf-message-inner .eltdf-message-text .eltdf-message-text-inner {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-style: normal;
+  position: relative;
+  left: -14px;
+  line-height: 29px;
+}
+
+.eltdf-message .eltdf-message-inner a.eltdf-close {
+  position: absolute;
+  right: -12px;
+  top: 7px;
+  line-height: 13px;
+  font-size: 18px;
+  color: #000;
+}
+
+.eltdf-message .eltdf-message-inner a.eltdf-close i {
+  width: 14px;
+  height: 14px;
+  color: #fff;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.eltdf-message .eltdf-message-inner a.eltdf-close i:hover {
+  color: #717171 !important;
+}
+
+/* Unique style for both types - end
+========================================================================== */
+/* Type with icon - begin
+========================================================================== */
+.eltdf-message.eltdf-with-icon .eltdf-message-icon-holder {
+  float: left;
+  padding: 0 20px 0 0;
+  margin-left: -21px;
+  margin-top: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+  .eltdf-message.eltdf-with-icon .eltdf-message-icon-holder {
+    padding: 20px 22px;
+  }
+}
+
+.eltdf-message.eltdf-with-icon .eltdf-message-icon-holder .eltdf-message-icon {
+  display: table;
+  height: 100%;
+  color: #fff;
+}
+
+.eltdf-message.eltdf-with-icon .eltdf-message-icon-holder .eltdf-message-icon .eltdf-message-icon-inner {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.eltdf-message.eltdf-with-icon .eltdf-message-icon-holder .eltdf-message-icon .eltdf-message-icon-inner > i,
+.eltdf-message.eltdf-with-icon .eltdf-message-icon-holder .eltdf-message-icon .eltdf-message-icon-inner > span {
+  line-height: 1em;
+  padding: 8px;
+}
+
+/* Type with icon - end
+========================================================================== 
+/* ==========================================================================
+# Message style - end
+========================================================================== */
+/* ==========================================================================
+   Overlapping Text shortcode styles - begin
+   ========================================================================== */
+.eltdf-overlapping-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.eltdf-overlapping-text-holder .eltdf-ot-background-text-holder {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  font-family: "Lora", serif;
+  font-size: 253px;
+  color: rgba(0, 0, 0, 0.1);
+  font-weight: 400;
+  line-height: 1em;
+}
+
+.eltdf-overlapping-text-holder .eltdf-ot-background-text-mark-holder {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  font-family: "Lora", serif;
+  font-size: 155px;
+  color: rgba(0, 0, 0, 0.1);
+  font-weight: 400;
+  line-height: 1em;
+}
+
+.eltdf-overlapping-text-holder .eltdf-ot-foreground-text-holder {
+  position: relative;
+  margin-top: -13.5%;
+}
+
+.eltdf-overlapping-text-holder .eltdf-ot-foreground-text-holder .eltdf-ot-foreground-text {
+  margin: 13px 0;
+}
+
+.eltdf-overlapping-text-holder.eltdf-overlapping-text-holder-left .eltdf-ot-foreground-text-holder {
+  margin-left: 8%;
+}
+
+.eltdf-overlapping-text-holder.eltdf-overlapping-text-holder-right .eltdf-ot-foreground-text-holder {
+  margin-right: 8%;
+}
+
+/* ==========================================================================
+   Overlapping Text shortcode styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Parallax shortcode style - begin
+   ========================================================================== */
+.eltdf-parallax-holder {
+  position: static;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center 0;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.eltdf-parallax-holder.eltdf-vertical-middle-align {
+  display: table;
+  width: 100%;
+}
+
+.eltdf-parallax-holder.eltdf-vertical-middle-align .eltdf-parallax-inner {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.touch .eltdf-parallax-holder.eltdf-disabled-parallax-on-touch {
+  height: auto !important;
+  min-height: 200px !important;
+  background-position: center top !important;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.eltdf-parallax-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.eltdf-parallax-container > .eltdf-parallax-image-frame {
+  position: absolute;
+  overflow: hidden;
+}
+
+.eltdf-parallax-container > .eltdf-parallax-image-frame > .eltdf-parallax-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 2000px;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+/* ==========================================================================
+   Parallax shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Pie Chart shortcode style - begin
+   ========================================================================== */
+.eltdf-pie-chart-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+}
+
+.eltdf-pie-chart-holder .eltdf-pc-percentage {
+  position: relative;
+  display: block;
+  height: 176px;
+  width: 176px;
+  line-height: 176px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.eltdf-pie-chart-holder .eltdf-pc-percentage canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.eltdf-pie-chart-holder .eltdf-pc-percentage .eltdf-pc-percent {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+  font-size: 36px;
+  line-height: inherit;
+  font-weight: 600;
+}
+
+.eltdf-pie-chart-holder .eltdf-pc-percentage .eltdf-pc-percent:after {
+  position: relative;
+  top: -15px;
+  content: '%';
+  font-size: 15px;
+}
+
+.eltdf-pie-chart-holder .eltdf-pc-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  margin: 30px 0 0;
+}
+
+.eltdf-pie-chart-holder .eltdf-pc-text-holder .eltdf-pc-title {
+  margin: 5px 0;
+}
+
+.eltdf-pie-chart-holder .eltdf-pc-text-holder .eltdf-pc-text {
+  margin: 14px 0 0;
+}
+
+/* ==========================================================================
+   Pie Chart shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Pricing Item shortcode style - begin
+   ========================================================================== */
+.eltdf-price-item {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.eltdf-price-item .eltdf-pi-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-price-item .eltdf-pi-inner .eltdf-pi-prices {
+  position: relative;
+  float: left;
+  padding-right: 30px;
+  width: 30%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.eltdf-price-item .eltdf-pi-inner .eltdf-pi-prices .eltdf-pi-price {
+  display: inline-block;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 120px;
+  position: relative;
+  color: #000;
+  padding-left: 12px;
+}
+
+.eltdf-price-item .eltdf-pi-inner .eltdf-pi-prices .eltdf-pi-currency {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  font-family: "Lora", serif;
+  color: #000;
+  font-style: italic;
+  vertical-align: top;
+  top: -22px;
+}
+
+.eltdf-price-item .eltdf-pi-inner .eltdf-pi-content-holder {
+  float: left;
+  width: 70%;
+  position: relative;
+  text-align: left;
+}
+
+.eltdf-price-item .eltdf-pi-inner .eltdf-pi-content-holder .eltdf-pi-title {
+  position: relative;
+  top: -36px;
+  margin: 0;
+}
+
+.eltdf-price-item .eltdf-pi-inner .eltdf-pi-content-holder .eltdf-pi-subtitle {
+  font-size: 18px;
+  font-family: "Lora", serif;
+  line-height: 29px;
+  font-style: italic;
+  margin: 0;
+  top: -29px;
+  position: relative;
+}
+
+.eltdf-price-item .eltdf-pi-inner .eltdf-pi-content-holder .eltdf-pi-content {
+  position: relative;
+  top: -42px;
+}
+
+.eltdf-price-item .eltdf-pi-inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.eltdf-price-item .eltdf-pi-inner ul li {
+  margin: 0;
+  font-size: 16px;
+  color: #717171;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.eltdf-price-item .eltdf-pi-inner ul li:before {
+  content: "\4e";
+  font-family: 'ElegantIcons';
+  font-size: 18px;
+  letter-spacing: 0.14em;
+  color: #000;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+
+/* ==========================================================================
+   Pricing item shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Pricing Tables shortcode style - begin
+   ========================================================================== */
+.eltdf-pricing-tables {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  clear: both;
+}
+
+.eltdf-pricing-tables .eltdf-pt-wrapper {
+  position: relative;
+}
+
+.eltdf-pricing-tables.eltdf-pt-no-space .eltdf-pt-wrapper {
+  margin: 0;
+}
+
+.eltdf-pricing-tables.eltdf-pt-no-space .eltdf-price-table {
+  padding: 0 0px;
+  margin: 0 0 0px;
+}
+
+.eltdf-pricing-tables.eltdf-pt-tiny-space .eltdf-pt-wrapper {
+  margin: 0 -5px;
+}
+
+.eltdf-pricing-tables.eltdf-pt-tiny-space .eltdf-price-table {
+  padding: 0 5px;
+  margin: 0 0 10px;
+}
+
+.eltdf-pricing-tables.eltdf-pt-small-space .eltdf-pt-wrapper {
+  margin: 0 -10px;
+}
+
+.eltdf-pricing-tables.eltdf-pt-small-space .eltdf-price-table {
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.eltdf-pricing-tables.eltdf-pt-normal-space .eltdf-pt-wrapper {
+  margin: 0 -15px;
+}
+
+.eltdf-pricing-tables.eltdf-pt-normal-space .eltdf-price-table {
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+
+.eltdf-pricing-tables.eltdf-two-columns .eltdf-price-table {
+  width: 50%;
+}
+
+.eltdf-pricing-tables.eltdf-three-columns .eltdf-price-table {
+  width: 33.33333%;
+}
+
+.eltdf-pricing-tables.eltdf-four-columns .eltdf-price-table {
+  width: 25%;
+}
+
+.eltdf-pricing-tables.eltdf-five-columns .eltdf-price-table {
+  width: 20%;
+}
+
+.eltdf-price-table {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  float: left;
+  box-sizing: border-box;
+}
+
+.eltdf-price-table .eltdf-pt-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li {
+  margin: 0;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-title-holder {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-title-holder .eltdf-pt-title {
+  font-family: "Lora", serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-subtitle-holder {
+  color: #717171;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 12px 30px 34px;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-prices {
+  position: relative;
+  padding: 33px 30px 0;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-prices .eltdf-pt-value {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Lora", serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  font-weight: 400;
+  color: #000;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-prices .eltdf-pt-price {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Lora", serif;
+  font-size: 57px;
+  line-height: 1em;
+  font-weight: 400;
+  color: #000;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-prices .eltdf-pt-mark {
+  display: inline-block;
+  vertical-align: bottom;
+  color: #000;
+  letter-spacing: 1.5px;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-prices .eltdf-pt-mark:before {
+  content: "/";
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-content {
+  color: #717171;
+  padding: 30px 30px 0px;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-button {
+  padding: 15px 30px 45px;
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode style - end
+   ========================================================================== */
+.eltdf-process-holder {
+  position: relative;
+}
+
+.eltdf-process-holder .eltdf-process-inner:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.eltdf-process-holder .eltdf-process-inner:before {
+  content: " ";
+  display: table;
+}
+
+.eltdf-process-holder .eltdf-image-holder-inner {
+  font-size: 100px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  z-index: 9;
+}
+
+.eltdf-process-holder .eltdf-image-holder-inner span {
+  position: relative;
+  z-index: 998;
+}
+
+.eltdf-process-holder .eltdf-process-background-image .eltdf-number-holder-inner {
+  background-color: transparent;
+}
+
+.eltdf-process-holder .eltdf-process-bg-holder {
+  position: absolute;
+  top: 97px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  margin: 0 10px;
+}
+
+.eltdf-process-holder .eltdf-process-item-holder {
+  text-align: center;
+  float: left;
+  width: 25%;
+}
+
+.eltdf-process-holder .eltdf-process-item-holder:first-child .eltdf-pi-holder-inner .eltdf-pi-holder-inner-wrapper:before {
+  content: none;
+}
+
+.eltdf-process-holder .eltdf-process-item-holder:last-child .eltdf-pi-holder-inner .eltdf-pi-holder-inner-wrapper:after {
+  content: none;
+}
+
+.eltdf-process-holder .eltdf-process-item-holder .eltdf-pi-content-holder {
+  margin: 0 20px;
+}
+
+.eltdf-process-holder .eltdf-process-item-holder .eltdf-pi-holder-inner {
+  margin: 0 auto;
+}
+
+.eltdf-process-holder .eltdf-process-item-holder .eltdf-pi-holder-inner .eltdf-pi-holder-inner-wrapper {
+  position: relative;
+}
+
+.eltdf-process-holder .eltdf-process-item-holder .eltdf-pi-holder-inner .eltdf-pi-holder-inner-wrapper:after {
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  border-top: 2px dashed #b5b3b0;
+  -webkit-transition: all 0.2s cubic-bezier(0.35, 0.7, 0.32, 0.9) 0.2s;
+  -moz-transition: all 0.2s cubic-bezier(0.35, 0.7, 0.32, 0.9) 0.2s;
+  transition: all 0.2s cubic-bezier(0.35, 0.7, 0.32, 0.9) 0.2s;
+}
+
+.eltdf-process-holder .eltdf-process-item-holder .eltdf-pi-holder-inner .eltdf-pi-holder-inner-wrapper:before {
+  content: "";
+  right: 50%;
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  border-top: 2px dashed #b5b3b0;
+  -webkit-transition: all 0.2s cubic-bezier(0.35, 0.7, 0.32, 0.9) 0.2s;
+  -moz-transition: all 0.2s cubic-bezier(0.35, 0.7, 0.32, 0.9) 0.2s;
+  transition: all 0.2s cubic-bezier(0.35, 0.7, 0.32, 0.9) 0.2s;
+  text-align: center;
+}
+
+.eltdf-process-holder .eltdf-process-item-holder.eltdf-pi-push-right .eltdf-pi-holder-inner {
+  float: right;
+}
+
+.eltdf-process-holder.eltdf-process-holder-items-three .eltdf-process-item-holder {
+  width: 33.33%;
+}
+
+.eltdf-process-holder.eltdf-process-multiple-highlights .eltdf-pi-holder-inner {
+  width: 100%;
+}
+
+.eltdf-process-holder .eltdf-pi-title-holder {
+  margin-bottom: 7px;
+}
+
+.eltdf-process-holder .eltdf-pi-title {
+  margin-bottom: 0;
+  margin-top: 18px;
+  letter-spacing: 0.1em;
+}
+
+.eltdf-process-holder .eltdf-pi-text-holder {
+  margin-top: -3px;
+}
+
+.eltdf-process-holder .eltdf-pi-text-holder p {
+  margin: 0;
+  font-weight: 400;
+}
+
+.eltdf-process-holder .eltdf-pi-image-holder {
+  background-color: #fff;
+  display: inline-block;
+  width: 214px;
+  height: 214px;
+  border: 1px dashed #ebebeb;
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.eltdf-process-holder .eltdf-pi-image-holder img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Progress Bar shortcode style - begin
+   ========================================================================== */
+.eltdf-progress-bar {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-progress-bar.eltdf-progress-bar-dark .eltdf-pb-title-holder {
+  position: relative;
+  margin: 21px 0 11px;
+  letter-spacing: 2px;
+  line-height: 33px;
+  font-weight: 400;
+}
+
+.eltdf-progress-bar.eltdf-progress-bar-dark .eltdf-pb-title-holder .eltdf-pb-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 100;
+  color: #000;
+}
+
+.eltdf-progress-bar.eltdf-progress-bar-dark .eltdf-pb-percent {
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0;
+  z-index: 10;
+  letter-spacing: 2px;
+  line-height: 33px;
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.eltdf-progress-bar.eltdf-progress-bar-dark .eltdf-pb-percent:after {
+  content: '%';
+}
+
+.eltdf-progress-bar.eltdf-progress-bar-dark .eltdf-pb-content-holder {
+  position: relative;
+  height: 6px;
+  overflow: hidden;
+  background-color: #b4b4b4;
+}
+
+.eltdf-progress-bar.eltdf-progress-bar-dark .eltdf-pb-content-holder .eltdf-pb-content {
+  height: 6px;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.eltdf-progress-bar.eltdf-progress-bar-light .eltdf-pb-title-holder {
+  position: relative;
+  margin: 16px 0 6px;
+  letter-spacing: 2px;
+  line-height: 33px;
+  font-weight: 400;
+}
+
+.eltdf-progress-bar.eltdf-progress-bar-light .eltdf-pb-title-holder .eltdf-pb-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 100;
+  color: #fff;
+}
+
+.eltdf-progress-bar.eltdf-progress-bar-light .eltdf-pb-percent {
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0;
+  z-index: 10;
+  letter-spacing: 2px;
+  line-height: 33px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.eltdf-progress-bar.eltdf-progress-bar-light .eltdf-pb-percent:after {
+  content: '%';
+}
+
+.eltdf-progress-bar.eltdf-progress-bar-light .eltdf-pb-content-holder {
+  position: relative;
+  height: 6px;
+  overflow: hidden;
+  background-color: #4d4d4d;
+}
+
+.eltdf-progress-bar.eltdf-progress-bar-light .eltdf-pb-content-holder .eltdf-pb-content {
+  height: 6px;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.eltdf-progress-bar.eltdf-progress-bar-default .eltdf-pb-title-holder {
+  position: relative;
+  margin: 16px 0 6px;
+  letter-spacing: 2px;
+  line-height: 33px;
+  font-weight: 400;
+}
+
+.eltdf-progress-bar.eltdf-progress-bar-default .eltdf-pb-title-holder .eltdf-pb-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 100;
+}
+
+.eltdf-progress-bar.eltdf-progress-bar-default .eltdf-pb-percent {
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0;
+  z-index: 10;
+  letter-spacing: 2px;
+  line-height: 33px;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.eltdf-progress-bar.eltdf-progress-bar-default .eltdf-pb-percent:after {
+  content: '%';
+}
+
+.eltdf-progress-bar.eltdf-progress-bar-default .eltdf-pb-content-holder {
+  position: relative;
+  height: 6px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+
+.eltdf-progress-bar.eltdf-progress-bar-default .eltdf-pb-content-holder .eltdf-pb-content {
+  height: 6px;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* ==========================================================================
+   Progress Bar shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Quote Section shortcode styles - begin
+   ========================================================================== */
+.eltdf-quote-section-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.eltdf-quote-section-holder .eltdf-qs-quote-additional-text {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  font-style: italic;
+  margin: 19px 0 17px;
+}
+
+.eltdf-quote-section-holder .eltdf-qs-quote-text {
+  margin: 13px 0;
+}
+
+.eltdf-quote-section-holder .eltdf-quote-section-line {
+  display: inline-block;
+  position: relative;
+  height: 45px;
+  width: 1px;
+  background: #000;
+}
+
+.eltdf-quote-section-holder .eltdf-quote-section-line.eltdf-quote-section-line-before-text {
+  margin-bottom: 15px;
+}
+
+.eltdf-quote-section-holder .eltdf-quote-section-line.eltdf-quote-section-line-after-text {
+  margin-top: 15px;
+}
+
+/* ==========================================================================
+   Quote Section shortcode styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+.eltdf-section-title-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.eltdf-section-title-holder .eltdf-st-subtitle-holder {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 21px;
+  border: 1px solid #cecece;
+  margin-bottom: 26px;
+}
+
+.eltdf-section-title-holder .eltdf-st-title {
+  display: block;
+  margin: 3px 0;
+}
+
+.eltdf-section-title-holder .eltdf-st-text {
+  font-size: 20px;
+  display: block;
+  margin: 12px 0 0;
+  font-family: "Lora", serif;
+  font-style: italic;
+  text-transform: none;
+  line-height: 1.6em;
+}
+
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Separator shortcode style - begin
+   ========================================================================== */
+.eltdf-separator-holder {
+  position: relative;
+  height: auto;
+  font-size: 0;
+  line-height: 1em;
+}
+
+.eltdf-separator-holder.eltdf-separator-center {
+  text-align: center;
+}
+
+.eltdf-separator-holder.eltdf-separator-left {
+  text-align: left;
+}
+
+.eltdf-separator-holder.eltdf-separator-right {
+  text-align: right;
+}
+
+.eltdf-separator-holder.eltdf-separator-full-width .eltdf-separator {
+  width: 100% !important;
+}
+
+.eltdf-separator {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 1px solid #e6e6e6;
+  margin: 10px 0;
+}
+
+/* ==========================================================================
+   Separator shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Social Share shortcode style - begin
+   ========================================================================== */
+.eltdf-social-share-holder {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.eltdf-social-share-holder ul {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List type - begin
+========================================================================== */
+.eltdf-social-share-holder.eltdf-list .eltdf-social-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  color: #717171;
+  font-weight: 600;
+}
+
+.eltdf-social-share-holder.eltdf-list li {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0 13px 3px 0;
+}
+
+.eltdf-social-share-holder.eltdf-list li:last-child {
+  margin: 0 0 3px;
+}
+
+.eltdf-social-share-holder.eltdf-list li a {
+  font-size: 12px;
+  color: #000;
+}
+
+.eltdf-social-share-holder.eltdf-list li a:hover {
+  color: #a7a9af;
+}
+
+/* List type - end
+========================================================================== */
+/* Dropdown type - begin
+========================================================================== */
+.eltdf-social-share-holder.eltdf-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown-opener {
+  display: block;
+  color: #717171;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown-opener .eltdf-social-share-title {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown-opener .social_share {
+  font-size: 12px;
+  color: #000;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown-opener:hover {
+  color: #000;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown-opener:hover .social_share {
+  color: inherit;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown {
+  position: relative;
+  visibility: hidden;
+  z-index: 950;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul {
+  position: relative;
+  display: block;
+  z-index: 990;
+  margin: 0;
+  padding: 0 !important;
+  top: 3px;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li {
+  width: 88px;
+  height: 28px;
+  line-height: 28px;
+  visibility: hidden;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  font-size: 12px;
+  color: #717171;
+  box-sizing: border-box;
+  -webkit-transition: opacity 0.2s ease-out 0s, visibility 0.2s ease-out 0s, background-color 0.2s ease-out 0s;
+  -moz-transition: opacity 0.2s ease-out 0s, visibility 0.2s ease-out 0s, background-color 0.2s ease-out 0s;
+  transition: opacity 0.2s ease-out 0s, visibility 0.2s ease-out 0s, background-color 0.2s ease-out 0s;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li.eltdf-facebook-share:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li.eltdf-twitter-share:hover {
+  background-color: #00aced;
+  color: #fff;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li.eltdf-google_plus-share:hover {
+  background-color: #dd4b39;
+  color: #fff;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li.eltdf-linkedin-share:hover {
+  background-color: #007bb5;
+  color: #fff;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li.eltdf-tumblr-share:hover {
+  background-color: #32506d;
+  color: #fff;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li.eltdf-pinterest-share:hover {
+  background-color: #cb2027;
+  color: #fff;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li.eltdf-vk-share:hover {
+  background-color: #45668e;
+  color: #fff;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li:not(:first-child) {
+  border-top: none;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li a {
+  display: block;
+  color: inherit !important;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li a span {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li:nth-child(1) {
+  bottom: -29px;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li:nth-child(2) {
+  bottom: -58px;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li:nth-child(3) {
+  bottom: -87px;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li:nth-child(4) {
+  bottom: -116px;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li:nth-child(5) {
+  bottom: -145px;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li:nth-child(6) {
+  bottom: -174px;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li:nth-child(7) {
+  bottom: -203px;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown:hover .eltdf-social-share-dropdown ul li {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown:hover .eltdf-social-share-dropdown ul li {
+  /* opacity and visibility need to be different, but not background-color */
+}
+
+.eltdf-social-share-holder.eltdf-dropdown:hover .eltdf-social-share-dropdown ul li:nth-child(2) {
+  -webkit-transition: opacity 0.2s ease-out 0.2s, visibility 0.2s ease-out 0.2s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.2s, visibility 0.2s ease-out 0.2s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.2s, visibility 0.2s ease-out 0.2s, background-color 0.2s ease-out;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown:hover .eltdf-social-share-dropdown ul li:nth-child(3) {
+  -webkit-transition: opacity 0.2s ease-out 0.3s, visibility 0.2s ease-out 0.3s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.3s, visibility 0.2s ease-out 0.3s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.3s, visibility 0.2s ease-out 0.3s, background-color 0.2s ease-out;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown:hover .eltdf-social-share-dropdown ul li:nth-child(4) {
+  -webkit-transition: opacity 0.2s ease-out 0.4s, visibility 0.2s ease-out 0.4s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.4s, visibility 0.2s ease-out 0.4s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.4s, visibility 0.2s ease-out 0.4s, background-color 0.2s ease-out;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown:hover .eltdf-social-share-dropdown ul li:nth-child(5) {
+  -webkit-transition: opacity 0.2s ease-out 0.5s, visibility 0.2s ease-out 0.5s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.5s, visibility 0.2s ease-out 0.5s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.5s, visibility 0.2s ease-out 0.5s, background-color 0.2s ease-out;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown:hover .eltdf-social-share-dropdown ul li:nth-child(6) {
+  -webkit-transition: opacity 0.2s ease-out 0.6s, visibility 0.2s ease-out 0.6s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.6s, visibility 0.2s ease-out 0.6s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.6s, visibility 0.2s ease-out 0.6s, background-color 0.2s ease-out;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown:hover .eltdf-social-share-dropdown ul li:nth-child(7) {
+  -webkit-transition: opacity 0.2s ease-out 0.7s, visibility 0.2s ease-out 0.7s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.7s, visibility 0.2s ease-out 0.7s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.7s, visibility 0.2s ease-out 0.7s, background-color 0.2s ease-out;
+}
+
+/* Dropdown type - end
+========================================================================== */
+/* ==========================================================================
+   Social Share shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+.eltdf-tabs {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-tabs .eltdf-tabs-nav {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.eltdf-tabs .eltdf-tabs-nav li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.eltdf-tabs .eltdf-tabs-nav li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out;
+  text-transform: uppercase;
+}
+
+.eltdf-tabs .eltdf-tab-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-tabs .eltdf-tab-container p {
+  margin: 0;
+}
+
+.eltdf-tabs.eltdf-tabs-standard .eltdf-tabs-nav li {
+  padding-right: 15px;
+}
+
+.eltdf-tabs.eltdf-tabs-standard .eltdf-tabs-nav li a {
+  padding: 6px 50px;
+  font-size: 11px;
+  line-height: 47px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+}
+
+.eltdf-tabs.eltdf-tabs-standard .eltdf-tabs-nav li.ui-state-active a,
+.eltdf-tabs.eltdf-tabs-standard .eltdf-tabs-nav li.ui-state-hover a {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+}
+
+.eltdf-tabs.eltdf-tabs-standard .eltdf-tab-container {
+  margin: 35px 0 0;
+}
+
+.eltdf-tabs.eltdf-tabs-boxed .eltdf-tabs-nav li {
+  margin: 0 15px 0 0;
+}
+
+.eltdf-tabs.eltdf-tabs-boxed .eltdf-tabs-nav li a {
+  padding: 6px 32px;
+  font-size: 11px;
+  line-height: 47px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #000;
+  background-color: #f7f6f5;
+}
+
+.eltdf-tabs.eltdf-tabs-boxed .eltdf-tabs-nav li.ui-state-active a,
+.eltdf-tabs.eltdf-tabs-boxed .eltdf-tabs-nav li.ui-state-hover a {
+  color: #fff;
+  background-color: #000;
+}
+
+.eltdf-tabs.eltdf-tabs-boxed .eltdf-tabs-nav li:last-child {
+  margin: 0;
+}
+
+.eltdf-tabs.eltdf-tabs-boxed .eltdf-tab-container {
+  margin: 37px 0 0;
+}
+
+.eltdf-tabs.eltdf-tabs-simple .eltdf-tabs-nav {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.eltdf-tabs.eltdf-tabs-simple .eltdf-tabs-nav li {
+  margin: 0 31px 0 0;
+}
+
+.eltdf-tabs.eltdf-tabs-simple .eltdf-tabs-nav li a {
+  padding: 13px 0;
+  font-size: 17px;
+  font-family: "Lora", serif;
+  letter-spacing: 2px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #717171;
+}
+
+.eltdf-tabs.eltdf-tabs-simple .eltdf-tabs-nav li.ui-state-active a,
+.eltdf-tabs.eltdf-tabs-simple .eltdf-tabs-nav li.ui-state-hover a {
+  color: #000;
+}
+
+.eltdf-tabs.eltdf-tabs-simple .eltdf-tabs-nav li:last-child {
+  margin: 0;
+}
+
+.eltdf-tabs.eltdf-tabs-simple .eltdf-tab-container {
+  padding: 31px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav {
+  display: table-cell;
+  vertical-align: top;
+  width: 140px;
+  height: 100%;
+  border-right: 1px solid #e6e6e6;
+  box-sizing: border-box;
+}
+
+.eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav li {
+  display: block;
+  float: none;
+  margin: 0 0 24px;
+}
+
+.eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav li a {
+  font-size: 17px;
+  font-family: "Lora", serif;
+  letter-spacing: 2px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #717171;
+}
+
+.eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav li.ui-state-active a,
+.eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav li.ui-state-hover a {
+  color: #000;
+}
+
+.eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav li:last-child {
+  margin: 0;
+}
+
+.eltdf-tabs.eltdf-tabs-vertical .eltdf-tab-container {
+  display: table-cell;
+  vertical-align: top;
+  width: calc(100% - 140px);
+  height: 100%;
+  padding: 0 0 0 45px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Vertical Split Slider shortcode style - begin
+   ========================================================================== */
+.eltdf-vss-initialized .eltdf-content .eltdf-content-inner > .eltdf-container > .eltdf-container-inner {
+  padding: 0;
+}
+
+.eltdf-vss-initialized .eltdf-content .eltdf-content-inner > .eltdf-full-width > .eltdf-full-width-inner {
+  padding: 0;
+}
+
+.eltdf-vertical-split-slider {
+  position: relative;
+  opacity: 0;
+  margin: 0 -2px;
+  overflow: hidden;
+}
+
+.eltdf-vertical-split-slider .eltdf-vss-ms-left,
+.eltdf-vertical-split-slider .eltdf-vss-ms-right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.eltdf-vertical-split-slider .eltdf-vss-ms-left {
+  top: 0;
+  left: 0;
+  padding-right: 15px;
+}
+
+.eltdf-vertical-split-slider .eltdf-vss-ms-left .eltdf-vss-ms-section {
+  background-position: 100% center;
+  background-size: cover;
+}
+
+.eltdf-vertical-split-slider .eltdf-vss-ms-right {
+  top: 10000px;
+  right: 0;
+  padding-left: 15px;
+}
+
+.eltdf-vertical-split-slider .eltdf-vss-ms-right .eltdf-vss-ms-section {
+  background-position: 0 center;
+  background-size: cover;
+}
+
+.eltdf-vertical-split-slider .eltdf-vss-ms-section.ms-table {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.eltdf-vertical-split-slider .eltdf-vss-ms-section .ms-tableCell {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.eltdf-vertical-split-slider .eltdf-vss-ms-section .ms-easing {
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+.eltdf-vss-responsive {
+  display: none;
+}
+
+.eltdf-vss-responsive .eltdf-vss-ms-section {
+  background-position: center;
+  background-size: cover;
+}
+
+.eltdf-vss-responsive .eltdf-vss-ms-section.ms-table {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.eltdf-vss-responsive .eltdf-vss-ms-section .ms-tableCell {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.eltdf-vertical-split-slider-widget-area {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  z-index: 100;
+}
+
+.eltdf-vertical-split-slider-widget-area .widget {
+  margin: 0 10px !important;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#multiscroll-nav {
+  -webkit-transform: translateX(-33px);
+  -moz-transform: translateX(-33px);
+  transform: translateX(-33px);
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+  position: fixed;
+  z-index: 1000;
+  margin-top: -53px;
+  top: 50%;
+  opacity: 1;
+}
+
+#multiscroll-nav.right {
+  float: right;
+  right: 26px;
+}
+
+#multiscroll-nav ul {
+  margin: 0;
+  padding: 0;
+  counter-reset: section;
+}
+
+#multiscroll-nav ul li {
+  position: relative;
+  display: block;
+  margin: 16px 0px;
+  line-height: 1;
+  text-align: right;
+}
+
+#multiscroll-nav ul li a {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-color: transparent;
+  z-index: 1;
+  box-sizing: border-box;
+  -webkit-transition: background-color 0.25s ease, width 0.25s ease;
+  -moz-transition: background-color 0.25s ease, width 0.25s ease;
+  transition: background-color 0.25s ease, width 0.25s ease;
+}
+
+#multiscroll-nav ul li a.active, #multiscroll-nav ul li a:hover {
+  background-color: #000;
+}
+
+#multiscroll-nav ul li a.active:before, #multiscroll-nav ul li a:hover:before {
+  color: #000;
+}
+
+#multiscroll-nav ul li a .eltdf-light-header.active, #multiscroll-nav ul li a .eltdf-light-header:hover {
+  background-color: #fff;
+}
+
+#multiscroll-nav ul li a .eltdf-dark-header.active, #multiscroll-nav ul li a .eltdf-dark-header:hover {
+  background-color: #333;
+}
+
+#multiscroll-nav ul li a span {
+  display: block;
+}
+
+/* ==========================================================================
+   Vertical Split Slider shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Video Button shortcode start styles
+   ========================================================================== */
+.eltdf-video-button-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-image:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  -webkit-transition: opacity 0.25s;
+  -moz-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-image img {
+  display: block;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play,
+.eltdf-video-button-holder .eltdf-video-button-play-image {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play .eltdf-video-button-play-inner,
+.eltdf-video-button-holder .eltdf-video-button-play-image .eltdf-video-button-play-inner {
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  margin: auto;
+  background-color: black;
+  color: white;
+  position: relative;
+  left: 0;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play {
+  color: #000;
+  font-size: 86px;
+  display: block;
+  line-height: 55px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play span {
+  display: block;
+  line-height: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-video-button-holder:hover .eltdf-video-button-image:after {
+  opacity: 1;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play-image.eltdf-vb-has-hover-image:hover img:first-child {
+  opacity: 0;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play-image.eltdf-vb-has-hover-image:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play-image img {
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play-image img:first-child {
+  position: relative;
+  opacity: 1;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play-image img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateZ(0);
+  -moz-transform: translateX(-50%) translateZ(0);
+  transform: translateX(-50%) translateZ(0);
+}
+
+.rev_slider_wrapper .eltdf-video-button-holder .eltdf-video-button-play-image img:nth-child(2) {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* ==========================================================================
+   Video Button shortcode end styles
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/elated-core/assets/css/shortcodes.css.map */

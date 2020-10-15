@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+
+.eltdf-section-title-holder {
+    @include eltdfRelativeHolderLayout();
+	  box-sizing: border-box;
+
+    .eltdf-st-subtitle-holder {
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 0 21px;
+      border: 1px solid $default-grey-color;
+      margin-bottom: 26px;
+    }
+	
+    .eltdf-st-title {
+	      display: block;
+        margin: 3px 0;
+    }
+    
+    .eltdf-st-text {
+        font-size: 20px;
+	      display: block;
+        margin: 12px 0 0;
+        font-family: $alternative-text-font;
+        font-style: italic;
+        text-transform: none;
+        line-height: 1.6em;
+    }
+}
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+
+

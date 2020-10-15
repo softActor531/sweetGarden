@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Icon With Text shortcode responsive style - begin
+   ========================================================================== */
+
+@include phone-portrait {
+
+	.eltdf-iwt {
+
+		&.eltdf-iwt-icon-left {
+
+			.eltdf-iwt-icon,
+			.eltdf-iwt-content {
+				display: block;
+			}
+
+			.eltdf-iwt-icon {
+				top: 0;
+				right: 0;
+				margin-bottom: 18px;
+			}
+
+			.eltdf-iwt-content {
+				padding: 0;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Icon With Text shortcode responsive style - end
+   ========================================================================== */

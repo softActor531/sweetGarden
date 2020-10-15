@@ -1,0 +1,2 @@
+[01-Feb-2019 14:34:28 America/Denver] PHP Fatal error:  Call to undefined function do_action() in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/assets/css/style_dynamic_responsive.php on line 2
+[01-Feb-2019 14:34:29 America/Denver] PHP Fatal error:  Call to undefined function do_action() in /home1/learnonc/public_html/sweetgarden/wp-content/themes/satine/assets/css/style_dynamic.php on line 3

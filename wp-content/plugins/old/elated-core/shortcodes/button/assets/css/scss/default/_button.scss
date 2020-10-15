@@ -1,0 +1,149 @@
+/* ==========================================================================
+   Button shortcode style - begin
+   ========================================================================== */
+
+.eltdf-btn {
+    @include eltdfButtonDefaultStyle();
+    @include eltdfButtonMediumParams();
+
+    &.eltdf-btn-simple {
+        padding: 0 !important;
+        color: $first-main-color;
+        background-color: transparent;
+        border: 0;
+        vertical-align: middle;
+
+        .eltdf-btn-text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        > i,
+        > span:not(.eltdf-btn-text) {
+            padding-left: 10px;
+            top: 0!important;
+        }
+
+        &:hover {
+            > i,
+            > span:not(.eltdf-btn-text) {
+                @include eltdfTransform(translateX(5px));
+            }
+        }
+    }
+
+    &.eltdf-btn-solid {
+        @include eltdfButtonSolidColor();
+
+        &:not(.eltdf-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: #fff !important;
+        }
+
+        &:not(.eltdf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: rgba(0,0,0,0.75) !important;
+        }
+
+        &:not(.eltdf-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: transparent !important;
+        }
+    }
+
+    &.eltdf-btn-with-arrow {
+        @include eltdfButtonSolidColor();
+
+        > i,
+        > span:not(.eltdf-btn-text) {
+            position: relative;
+            top: -1px;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 1.142857142857143em;
+            @include eltdfTransition(all .2s ease-in-out);
+
+            &:before {
+                display: block;
+                line-height: inherit;
+            }
+        }
+
+        &:hover {
+            > i,
+            > span:not(.eltdf-btn-text) {
+                @include eltdfTransform(translateX(5px));
+            }
+        }
+
+    }
+
+    &.eltdf-btn-outline {
+	    @include eltdfButtonOutlineColor();
+
+        &:not(.eltdf-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: #fff !important;
+        }
+
+        &:not(.eltdf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: $default-grey-color !important;
+        }
+
+        &:not(.eltdf-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: $default-grey-color !important;
+        }
+    }
+
+    &.eltdf-btn-small {
+        @include eltdfButtonSmallParams();
+    }
+
+    &.eltdf-btn-medium {
+        //same as default
+    }
+
+    &.eltdf-btn-large {
+        @include eltdfButtonLargeParams();
+    }
+
+    &.eltdf-btn-huge {
+        @include eltdfButtonHugeParams();
+    }
+
+    &.eltdf-btn-icon {
+
+        > i,
+        > span:not(.eltdf-btn-text) {
+            position: relative;
+            top: -1px;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 1.142857142857143em;
+            @include eltdfTransition(all .2s);
+
+            &:before {
+                display: block;
+                line-height: inherit;
+            }
+        }
+
+        &:hover {
+            > i,
+            > span:not(.eltdf-btn-text) {
+                @include eltdfTransform(translateX(5px));
+            }
+        }
+    }
+}
+
+input[type=submit].eltdf-btn,
+button.eltdf-btn {
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+/* ==========================================================================
+   Button shortcode style - end
+   ========================================================================== */

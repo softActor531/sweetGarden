@@ -1,0 +1,167 @@
+/* ==========================================================================
+# Team style - begin
+	========================================================================== */
+
+/* Team type simple - begin
+========================================================================== */
+
+.eltdf-team {
+	position: relative;
+
+	.eltdf-icon-shortcode {
+		color: $first-main-color;
+		font-size: 13px;
+		margin: 0 17px;
+
+		a, span, i {
+			color: $first-main-color;
+
+			&:hover {
+				color: rgb(167, 169, 175);
+			}
+		}
+	}
+
+	&.info-bellow {
+		.eltdf-team-inner {
+			text-align: center;
+			width: 100%;
+		}
+
+		.eltdf-team-image {
+			position: relative;
+			overflow: hidden;
+			display: block;
+			margin: 0 auto;
+
+            a{
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+			a:after {
+				content: '';
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				top: 0;
+				left: 0;
+				background-color: #fff;
+				opacity: 0;
+
+				@include eltdfTransition(opacity 0.3s ease);
+			}
+
+			a:hover:after {
+				opacity: 0.3;
+			}
+
+			img {
+				vertical-align: middle;
+			}
+
+		}
+
+		.eltdf-team-text {
+			margin-bottom: 35px;
+			.eltdf-team-description {
+				margin: 0 10px;
+			}
+		}
+
+		.eltdf-team-title-holder {
+			margin-top: 27spx;
+			margin-bottom: 13px;
+		}
+
+		.eltdf-team-position {
+			margin-top: -12px;
+			position: relative;
+		}
+
+		&.circle {
+	        img {
+	            -webkit-border-radius: 50%;
+	            -moz-border-radius: 50%;
+	            border-radius: 50%;
+        	}
+   		}
+    }
+
+	&.info-hover {
+		.eltdf-team-inner {
+			position: relative;
+		}
+
+		.eltdf-team-image img {
+			display: block;
+		}
+
+		.eltdf-team-inner:hover {
+			.eltdf-team-info {
+				opacity: 1;
+			}
+		}
+
+		.eltdf-team-name, .eltdf-team-position, .eltdf-team-text,
+		.eltdf-icon-shortcode, .eltdf-icon-shortcode a, .eltdf-icon-shortcode a .eltdf-icon-element, .eltdf-icon-shortcode span, .eltdf-icon-shortcode i {
+			color: #fff;
+		}
+
+		.eltdf-team-position {
+			position: relative;
+			margin-top: -17px;
+		}
+
+		.eltdf-team-info-tb {
+			display: table-cell;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			text-align: center;
+            opacity: 0;
+			@include eltdfTransition(opacity 0.2s ease-out);
+
+			&:after {
+                content: "";
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+				background: -moz-linear-gradient(top, rgba(69, 78, 92, 0) 1%, rgba(69, 78, 92, 1) 100%);
+				background: -webkit-linear-gradient(top, rgba(69, 78, 92, 0) 1%, rgba(69, 78, 92, 1) 100%);
+				background: linear-gradient(to bottom, rgba(69, 78, 92, 0) 1%, rgba(69, 78, 92, 1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00454e5c', endColorstr='#454e5c', GradientType=0);
+			}
+
+            &:hover{
+                opacity: 1;
+            }
+		}
+
+		.eltdf-team-info-tc {
+            width: 100%;
+			position: absolute;
+			bottom: 22px;
+			left: 50%;
+            padding: 0px 10px;
+            box-sizing: border-box;
+            z-index: 10;
+
+			@include eltdfTransform(translateX(-50%));
+		}
+	}
+
+}
+
+/* ==========================================================================
+# Team style - end
+========================================================================== */

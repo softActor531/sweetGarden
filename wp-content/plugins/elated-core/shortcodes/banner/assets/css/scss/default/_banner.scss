@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+
+.eltdf-banner-holder {
+    @include eltdfRelativeHolderLayout();
+	
+	.eltdf-banner-image {
+		@include eltdfRelativeHolderLayout();
+		@include eltdfTransition(all .3s ease-in-out);
+		
+		img {
+			display: block;
+		}
+	}
+	
+	.eltdf-banner-text-holder {
+		@include eltdfAbsoluteHolderLayout();
+	}
+	
+	.eltdf-banner-text-inner {
+		@include eltdfRelativeHolderLayout();
+		height: 100%;
+		box-sizing: border-box;
+		position: absolute;
+		top: 20px;
+		left: 50px;
+	}
+	
+	.eltdf-banner-subtitle {
+		margin: -7px 0 0;
+	}
+	
+	.eltdf-banner-title {
+		position: relative;
+		overflow: hidden;
+		margin: 26px 0 5px;
+		@include eltdfTransition(all .2s);
+	}
+	
+	.eltdf-banner-text {
+		margin: 0;
+		line-height: 1em;
+	}
+
+	.eltdf-banner-link {
+		@include eltdfAbsoluteHolderLayout();
+		z-index: 1;
+	}
+
+	&.eltdf-hover-zoom {
+		overflow:hidden;
+
+		&:hover {
+			.eltdf-banner-image {
+				@include eltdfTransform(scale(1.05));
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */

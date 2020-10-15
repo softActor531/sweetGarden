@@ -1,0 +1,471 @@
+/* ==========================================================================
+   Elated Membership Plugin Style - begin
+   ========================================================================== */
+
+.eltdf-social-login-holder input[type="text"],
+.eltdf-social-login-holder input[type="email"],
+.eltdf-social-login-holder input[type="password"],
+.eltdf-social-register-holder input[type="text"],
+.eltdf-social-register-holder input[type="email"],
+.eltdf-social-register-holder input[type="password"],
+.eltdf-social-reset-password-holder input[type="text"],
+.eltdf-social-reset-password-holder input[type="email"],
+.eltdf-social-reset-password-holder input[type="password"], .eltdf-membership-input-holder .eltdf-membership-input {
+	position: relative;
+	width: 100%;
+	margin: 0 0 14px;
+	padding: 15px 20px;
+	font-family: inherit;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: inherit;
+	color: $default-text-color;
+	background-color: #fff;
+	border: 1px solid $default-border-color;
+	outline: 0;
+	-webkit-appearance: none;
+	box-sizing: border-box;
+	height: 50px;
+
+	@include eltdfPlaceholder {
+		color: $default-text-color;
+	}
+
+	&:focus{
+		background: #fafafa;
+	}
+}
+
+.eltdf-membership-input-holder label{
+	color: $default-heading-color;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 4px;
+}
+
+.eltdf-membership-response-holder{
+	.eltdf-membership-response {
+		display: block;
+		margin: 14px 0 0;
+		font-size: 13px;
+		font-weight: 700;
+
+		&.eltdf-membership-message-succes {
+			color: #000;
+		}
+
+		&.eltdf-membership-message-error {
+			color: #ff3d27;
+		}
+	}
+}
+
+.eltdf-wp-register-holder{
+	.eltdf-register-notice h5 {
+		margin: 0;
+	}
+}
+
+/* Login/Register widget - start
+   ========================================================================== */
+.eltdf-login-register-widget {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+
+	&.eltdf-user-logged-in{
+		height: 100%;
+	}
+
+	.eltdf-login-opener {
+		color: $first-main-color;
+		font-size: 12px;
+		letter-spacing: 0.1em;
+		margin: 0 10px;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 1em;
+
+		&:before{
+			position: relative;
+			display: inline-block;
+			top: -1px;
+			font-family: 'Linearicons-Free';
+			content: "\e82a";
+			font-size: 13px;
+			line-height: 16px;
+			margin-right: 5px;
+			overflow: hidden;
+			vertical-align: middle;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		&:hover {
+			color: $default-text-color;
+		}
+	}
+
+	.eltdf-dark-header & .eltdf-login-opener {
+		color: #000;
+
+		&:hover{
+			color: rgba(0,0,0,.8);
+		}
+	}
+
+	.eltdf-light-header & .eltdf-login-opener {
+		color: #fff;
+
+		&:hover{
+			color: rgba(255,255,255,.8);
+		}
+	}
+
+	.eltdf-logged-in-user {
+		height: 100%;
+		display: table;
+		vertical-align: middle;
+
+		.eltdf-logged-in-user-inner{
+			display: table-cell;
+			vertical-align: middle;
+			height: 100%;
+
+			& > span {
+				color: $first-main-color;
+				font-size: 12px;
+				letter-spacing: 0.1em;
+				margin: 0 10px;
+				font-weight: 700;
+				text-transform: uppercase;
+				line-height: 1em;
+				cursor: pointer;
+
+
+				.eltdf-dark-header &{
+					color: #000;
+				}
+
+				.eltdf-light-header &{
+					color: #fff;
+				}
+
+				img {
+					display: inline-block;
+					vertical-align: middle;
+					width: 23px;
+					height: 23px;
+					margin: -2px 3px 0 0;
+					border-radius: 100%;
+				}
+			}
+		}
+	}
+
+	.eltdf-login-dropdown {
+		position: absolute;
+		width: 100%;
+		top: 100%;
+		margin: 0;
+		left: 0;
+		opacity: 0;
+		list-style-type: none;
+		background-color: #212121;
+		text-align: left;
+		padding: 23px 0 29px;
+		width: 193px;
+		box-sizing: border-box;
+		visibility: hidden;
+		z-index: 100;
+		@include eltdfTransition(opacity 0.4s ease-out);
+		box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+
+		li {
+			padding: 0;
+			margin: 0;
+			line-height: 1em;
+
+			a {
+				display: block;
+				position: relative;
+				overflow: hidden;
+				font-size: 14px;
+				line-height: 24px;
+				color: #a5a5a5;
+				padding-top: 3px;
+				padding-left: 30px;
+				padding-right: 30px;
+				@include eltdfTransition(color 0.3s ease, padding 0.3s ease);
+
+				&:before {
+					content: "\e87a";
+					font-family: 'Linearicons-Free';
+					speak: none;
+					font-style: normal;
+					font-weight: normal;
+					font-variant: normal;
+					text-transform: none;
+					line-height: 1;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+				    font-size: 13px;
+				    text-rendering: auto;
+				    position: absolute;
+				    top: 50%;
+				    left: 15px;
+				    @include eltdfTransform(translateY(-50%));
+				    opacity: 0;
+                    @include eltdfTransition(left .25s cubic-bezier(.54,.49,0,1.75));
+				}
+
+				&:hover {
+					color: #fff;
+					padding-left: 50px;
+					padding-right: 10px;
+
+					&:before {
+						opacity: 1;
+					    left: 30px;
+					    @include eltdfTransition(left .25s cubic-bezier(.54,.49,0,1.75) 50ms, opacity .0s 50ms);
+					}
+				}
+			}
+		}
+	}
+
+	&:hover .eltdf-login-dropdown {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.eltdf-login-register-holder {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 1002;
+
+	.eltdf-login-register-content {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		@include eltdfTransform(translateY(-50%));
+	}
+}
+
+
+
+.eltdf-login-register-content {
+	position: relative;
+	margin: 0 auto;
+	width: 300px;
+	background-color: #fff;
+	box-sizing: border-box;
+
+	&.eltdf-user-not-logged-in{
+		width: 600px;
+		margin-top: 70px;
+		margin-bottom: 110px;
+
+		ul li {
+			width: 33.33%;
+
+			&.ui-state-active{
+				background-color: $first-main-color;
+				a{
+					color: #fff;
+				}
+			}
+		}
+
+		.eltdf-login-content-inner,
+		.eltdf-register-content-inner,
+		.eltdf-reset-pass-content-inner{
+			padding-left: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	ul {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		clear: both;
+
+		li {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			float: left;
+			width: 50%;
+			margin: 0;
+			padding: 0;
+			line-height: 50px;
+			text-align: center;
+			background-color: #f8f8f8;
+
+			&.ui-state-active {
+				background-color: #fff;
+			}
+
+			a {
+				display: block;
+				color: $first-main-color;
+				font-size: 14px;
+				line-height: inherit;
+				font-weight: 600;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.eltdf-login-content-inner,
+	.eltdf-register-content-inner,
+	.eltdf-reset-pass-content-inner{
+		padding: 30px;
+	}
+
+	.eltdf-lost-pass-remember-holder {
+		display: block;
+
+		.eltdf-login-remember {
+			position: relative;
+			display: block;
+			margin-top: 5px;
+
+			& > * {
+				position: relative;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+
+		label {
+			font-size: 13px;
+			line-height: 13px;
+		}
+
+		input {
+			margin: -2px 0 0;
+		}
+
+		.eltdf-btn {
+			margin: 10px 0 0;
+			width: 100%;
+		}
+	}
+
+	.eltdf-login-action-btn {
+		position: relative;
+		display: block;
+		margin: 15px 0 0;
+		color: #666;
+		font-size: 13px;
+		-webkit-transition: color 0.2s ease-out;
+		-moz-transition: color 0.2s ease-out;
+		transition: color 0.2s ease-out;
+
+		&:hover {
+			color: #000;
+		}
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="password"]{
+		margin-bottom: 10px;
+	}
+
+	.eltdf-login-button-holder,
+	.eltdf-register-button-holder,
+	.eltdf-reset-password-button-holder
+	{
+		.eltdf-btn {
+			margin: 10px 0 0;
+			width: 100%;
+		}
+	}
+}
+
+/* Login/Register widget - end
+   ========================================================================== */
+
+/* Dashboard page - start
+   ========================================================================== */
+.eltdf-membership-dashboard-nav-holder {
+	float: left;
+	width: 25%;
+	margin: 70px 0 100px;
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			position: relative;
+			display: block;
+			width: 100%;
+
+			a {
+				color: $default-text-color;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 1em;
+				@include eltdfTransition(color 0.3s esase);
+
+				&:hover,
+				&.active{
+					color: $default-heading-color;
+				}
+			}
+		}
+	}
+
+}
+
+.eltdf-membership-dashboard-content-holder {
+	float: left;
+	width: 75%;
+	margin: 70px 0 100px;
+
+	.eltdf-profile-image{
+		border-radius: 100%;
+		display: inline-block;
+		overflow: hidden;
+		position: relative;
+
+		img{
+			display: block;
+			position: relative;
+		}
+	}
+
+	.eltdf-membership-dashboard-page-title {
+		margin: 0 0 23px;
+	}
+
+	.eltdf-membership-dashboard-page-content p span {
+		color: $default-heading-color;
+		font-weight: 400;
+	}
+}
+
+/* Dashboard page - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Elated Membership Plugin Style - end
+   ========================================================================== */

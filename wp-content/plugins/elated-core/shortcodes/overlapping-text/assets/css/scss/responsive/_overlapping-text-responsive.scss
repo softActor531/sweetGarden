@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Overlapping Text shortcode responsive styles - begin
+   ========================================================================== */
+
+.eltdf-overlapping-text-holder {
+    .eltdf-ot-background-text-holder {
+      @include ipad-portrait {
+        font-size: 237px;
+      }
+      @include phone-portrait {
+        font-size: 130px;
+      }
+    }
+
+    .eltdf-ot-background-text-mark-holder {
+      @include ipad-portrait {
+        font-size: 143px;
+      }
+      @include phone-portrait {
+        font-size: 85px;
+      }
+    }
+
+    .eltdf-ot-foreground-text-holder {
+      @include ipad-portrait {
+        margin-top: -17.5%;
+      }
+      @include phone-portrait {
+        margin-top: -20.5%;
+      }
+      .eltdf-ot-foreground-text {
+        @include phone-portrait {
+          font-size: 17px;
+        }
+      }
+    }
+
+
+}
+
+/* ==========================================================================
+   Overlapping Text shortcode responsive styles - end
+   ========================================================================== */

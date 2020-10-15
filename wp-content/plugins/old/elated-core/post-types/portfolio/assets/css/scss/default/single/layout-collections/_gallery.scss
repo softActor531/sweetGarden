@@ -1,0 +1,154 @@
+/* ==========================================================================
+   Portfolio Single - Gallery layout style - begin
+   ========================================================================== */
+
+.eltdf-portfolio-single-holder {
+    
+    &.eltdf-ps-gallery-layout {
+
+		.eltdf-ps-info-holder {
+			padding-top: 30px;
+			padding-bottom: 43px;
+		}
+
+		.eltdf-ps-title-holder {
+			h2 {
+				margin: 23px 0 31px;
+			}
+		}
+
+		.eltdf-ps-content-holder {
+			text-align: center;
+
+			.eltdf-ps-info-holder {
+
+				.eltdf-ps-info-item {
+					padding-left: 40px;
+
+					&.eltdf-ps-date {
+						display: inline;
+
+						h5,
+						p {
+							display: inline-block;
+						}
+
+						p {
+							padding-left: 3px;
+						}
+					}
+
+					&.eltdf-ps-custom-field {
+						display: inline;
+
+						h5,
+						p {
+							display: inline-block;
+						}
+
+						p {
+							padding-left: 3px;
+						}
+					}
+
+				}
+			}
+
+		}
+
+		.eltdf-ps-content-item {
+
+			p {
+				width: 66%;
+				margin: 0 auto;
+			}
+
+			@include ipad-landscape {
+				p {
+					width: 100%;
+				}
+			}
+		}
+
+		.eltdf-ps-social-info-holder {
+			padding-bottom: 17px;
+			.eltdf-portfolio-single-likes {
+				float: left;
+				display: inline-block;
+				padding-left: 3px;
+				a {
+					padding-right: 17px;
+					i {
+						font-size: 13px;
+						padding-right: 10px;
+					}
+
+					span {
+                    font-size: 13px;
+                    line-height: inherit;
+                    color: $default-heading-color;
+                    text-transform: uppercase;
+                    letter-spacing: 2.5px;
+                    font-weight: 600;
+                }
+				}
+			}
+
+			.eltdf-ps-social-share {
+				float: right;
+				display: inline;
+			}
+		}
+        
+        .eltdf-ps-image-holder {
+	        width: 100%;
+            margin: 0 0 27px;
+	
+	        .eltdf-ps-image {
+		        float: left;
+		        
+		        a {
+			        
+			        &:before {
+				        position: absolute;
+				        top: 50%;
+				        left: 50%;
+				        margin: -19px 0 0 -19px;
+				        content: '\4c';
+				        font-family: 'ElegantIcons';
+				        speak: none;
+				        color: #fff;
+				        font-size: 38px;
+				        line-height: 1;
+				        font-style: normal;
+				        font-weight: normal;
+				        font-variant: normal;
+				        -webkit-font-smoothing: antialiased;
+				        z-index: 2;
+				        opacity: 0;
+				        @include eltdfTransition(opacity .2s ease-in-out);
+			        }
+			        
+			        &:after {
+				        @include eltdfAbsoluteHolderLayout();
+				        content: '';
+				        background-color: rgba($first-main-color, 0.7);
+				        opacity: 0;
+				        @include eltdfTransition(opacity .2s ease-in-out);
+			        }
+			        
+			        &:hover {
+				
+				        &:before,
+				        &:after {
+					        opacity: 1;
+				        }
+			        }
+		        }
+	        }
+        }
+    }
+}
+/* ==========================================================================
+   Portfolio Single - Gallery layout style - end
+   ========================================================================== */

@@ -1,0 +1,106 @@
+/* ==========================================================================
+   Pricing Item shortcode style - begin
+   ========================================================================== */
+
+.eltdf-price-item {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  box-sizing: border-box;
+
+  .eltdf-pi-inner {
+    @include eltdfRelativeHolderLayout();
+
+
+    .eltdf-pi-prices {
+      position: relative;
+      float: left;
+      padding-right: 30px;
+      width: 30%;
+      box-sizing: border-box;
+      text-align: left;
+
+      .eltdf-pi-price {
+        display: inline-block;
+        font-family: $alternative-text-font;
+        font-weight: 400;
+        font-size: 120px;
+        position: relative;
+        color: $first-main-color;
+        padding-left: 12px;
+      }
+
+      .eltdf-pi-currency {
+        display: inline-block;
+        position: relative;
+        font-size: 30px;
+        font-family: $alternative-text-font;
+        color: $first-main-color;
+        font-style: italic;
+        vertical-align: top;
+        top: -22px;
+      }
+
+    }
+
+    .eltdf-pi-content-holder {
+      float: left;
+      width: 70%;
+      position: relative;
+      text-align: left;
+        .eltdf-pi-title {
+          position: relative;
+          top: -36px;
+          margin: 0;
+        }
+
+        .eltdf-pi-subtitle {
+          font-size: 18px;
+          font-family: $alternative-text-font;
+          line-height: 29px;
+          font-style: italic;
+          margin: 0;
+          top: -29px;
+          position: relative;
+        }
+
+        .eltdf-pi-content {
+          position: relative;
+          top: -42px;
+        }
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 0;
+        font-size: 16px;
+        color: $default-text-color;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+
+        &:before {
+          content: "\4e";
+          font-family: 'ElegantIcons';
+          font-size: 18px;
+          letter-spacing: 0.14em;
+          color: $first-main-color;
+          margin-right: 5px;
+          position: relative;
+          top: 2px;
+
+        }
+
+      }
+    }
+  }
+}
+/* ==========================================================================
+   Pricing item shortcode style - end
+   ========================================================================== */

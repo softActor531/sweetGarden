@@ -1,0 +1,100 @@
+@include laptop-landscape-large {
+	.eltdf-process-holder {
+		.eltdf-process-item-holder {
+			.eltdf-pi-image-holder {
+				width: 275px;
+				height: 275px;
+				margin-top: -20px;
+			}
+
+			.eltdf-pi-holder-inner {
+				width: 100%;
+			}
+
+		}
+	}
+}
+
+@include laptop-landscape {
+	.eltdf-process-holder {
+		.eltdf-process-bg-holder {
+			display: none;
+		}
+
+		.eltdf-process-item-holder {
+			.eltdf-pi-image-holder {
+				width: 171px;
+				height: 171px;
+			}
+		}
+	}
+
+	.eltdf-grid-col-9 .eltdf-process-holder-items-four .eltdf-process-item-holder {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+
+	.eltdf-grid-col-9 .eltdf-process-holder .eltdf-process-bg-holder {
+		background: none;
+	}
+}
+
+@include ipad-landscape {
+	.eltdf-process-holder {
+		&.eltdf-process-holder-items-four {
+			.eltdf-process-item-holder {
+				width: 50%;
+				margin-bottom: 30px;
+
+				.eltdf-pi-holder-inner {
+					width: 100%;
+
+					.eltdf-pi-content-holder {
+						padding: 0 20px;
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		.eltdf-process-item-holder {
+
+
+			.eltdf-pi-holder-inner {
+				.eltdf-pi-holder-inner-wrapper {
+					&:before {
+							content: none;
+					}
+
+					&:after {
+							content: none;
+					}
+				}
+			}
+
+		}
+
+	}
+}
+
+@include ipad-portrait {
+	.eltdf-process-holder {
+		&.eltdf-process-holder-items-three {
+			.eltdf-process-item-holder {
+				.eltdf-pi-image-holder {
+					margin-top: 0;
+				}
+
+			}
+		}
+
+		.eltdf-process-item-holder {
+			width: 100% !important;
+			margin-bottom: 30px;
+
+			.eltdf-pi-holder-inner {
+				width: 100%;
+			}
+		}
+	}
+}

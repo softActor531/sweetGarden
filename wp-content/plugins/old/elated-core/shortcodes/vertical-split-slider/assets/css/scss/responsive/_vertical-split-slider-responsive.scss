@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (min-width: 1600px) {
+	.eltdf-vertical-split-slider.eltdf-frame-slider {
+		  height: 88.3vh!important;
+
+		.eltdf-vss-ms-section .ms-tableCell {
+            height: 88.3vh!important;
+        }
+    }
+}
+
+@media only screen and  (max-width: 1440px) {
+	.eltdf-vertical-split-slider.eltdf-frame-slider {
+		  height: 83.5vh!important;
+
+		.eltdf-vss-ms-section .ms-tableCell {
+            height: 83.5vh!important;
+        }
+    }
+}
+
+@media only screen and  (max-width: 1280px) {
+	.eltdf-vertical-split-slider.eltdf-frame-slider {
+		  height: 81.3vh!important;
+
+		.eltdf-vss-ms-section .ms-tableCell {
+            height: 81.3vh!important;
+        }
+    }
+}
+
+
+@include ipad-landscape {
+	
+	body.eltdf-vss-initialized {
+		overflow-y: visible !important;
+		height: auto !important;
+	}
+	
+	.eltdf-vertical-split-slider,
+	#multiscroll-nav {
+		display: none;
+	}
+
+	.eltdf-vss-responsive {
+		display: block;
+	}
+
+	.eltdf-vertical-split-slider-widget-area{
+		display: none;
+	}
+}
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - end
+   ========================================================================== */
